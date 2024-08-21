@@ -248,7 +248,7 @@ this.FeatureBackground();
                             "admin123"});
                 table7.AddRow(new string[] {
                             "password",
-                            "Admin@123"});
+                            "Admin@12345"});
 #line 39
  testRunner.When("I log in with the following credentials", ((string)(null)), table7, "When ");
 #line hidden

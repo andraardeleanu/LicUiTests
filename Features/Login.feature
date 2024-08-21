@@ -37,7 +37,7 @@ Scenario: Successfully disconnect from the App
 @RegressionTests
 Scenario: Error when logging in with wrong credentials
 	When I log in with the following credentials
-		| key      | value     |
-		| username | admin123  |
-		| password | Admin@123 |
+		| key      | value       |
+		| username | admin123    |
+		| password | Admin@12345 |
 	Then the following warning message is displayed: Parola nu este corecta!

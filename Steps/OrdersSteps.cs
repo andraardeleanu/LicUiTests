@@ -2,11 +2,6 @@
 using LicUiTests.Helpers;
 using LicUiTests.Pages;
 using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TechTalk.SpecFlow;
 using static LicUiTests.Helpers.Utils;
 
@@ -156,8 +151,7 @@ namespace LicUiTests.Steps
         [When(@"I upload the file (.*) for the new order")]
         public void WhenIUploadTheFileForTheNewOrder(string fileName)
         {
-            UploadFile(fileName);
-            Sync.ExplicitWait(1);
+            UploadFile(fileName);            
         }
 
         [Then(@"I confirm (.*) is corecct for the selected products and quantities: (.*) RON")]

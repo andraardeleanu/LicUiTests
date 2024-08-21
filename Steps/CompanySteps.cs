@@ -82,11 +82,12 @@ namespace LicUiTests.Steps
             LicentaPages.CompanyPage.NewCompanyCuiField.SendKeys(newCompanyCUI);
         }
 
-        [When(@"I set the new Company Name: (.*)")]
-        public void WhenISetTheNewCompanyName(string newCompanyName)
+        [When(@"I set the new Company (.*): (.*)")]
+        public void WhenISetTheNewCompanyName(string nameKey, string newCompanyName)
         {
             Sync.ExplicitWait(1);
             LicentaPages.CompanyPage.NewCompanyNameField.SendKeys(newCompanyName);
+            scenarioContext.Add(nameKey, newCompanyName);
         }
 
         [When(@"I select the (.*) option button from the (.*)")]

@@ -245,7 +245,7 @@ this.FeatureBackground();
                             "Stoc disponibil",
                             "100"});
 #line 39
- testRunner.And("I fill in the new product\'s details", ((string)(null)), table30, "And ");
+ testRunner.And("I set the new product\'s Name and details", ((string)(null)), table30, "And ");
 #line hidden
 #line 44
  testRunner.And("I select Adauga button from \'Produse\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -254,7 +254,7 @@ this.FeatureBackground();
  testRunner.Then("the following toast message is displayed: Produsul a fost adaugat cu succes!", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 46
- testRunner.And("I confirm the new product is displayed through products table", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I confirm the new product\'s Name is displayed through products table", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -316,7 +316,7 @@ this.FeatureBackground();
                             "Stoc disponibil",
                             "0"});
 #line 57
- testRunner.And("I fill in the new product\'s details", ((string)(null)), table32, "And ");
+ testRunner.And("I set the new product\'s Name and details", ((string)(null)), table32, "And ");
 #line hidden
 #line 62
  testRunner.And("I select Adauga button from \'Produse\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -385,7 +385,7 @@ this.FeatureBackground();
                             "Stoc disponibil",
                             "-10"});
 #line 74
- testRunner.And("I fill in the new product\'s details", ((string)(null)), table34, "And ");
+ testRunner.And("I set the new product\'s Name and details", ((string)(null)), table34, "And ");
 #line hidden
 #line 79
  testRunner.And("I select Adauga button from \'Produse\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -454,7 +454,7 @@ this.FeatureBackground();
                             "Stoc disponibil",
                             "100"});
 #line 91
- testRunner.And("I fill in the new product\'s details", ((string)(null)), table36, "And ");
+ testRunner.And("I set the new product\'s Name and details", ((string)(null)), table36, "And ");
 #line hidden
 #line 96
  testRunner.And("I select Adauga button from \'Produse\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -523,7 +523,7 @@ this.FeatureBackground();
                             "Stoc disponibil",
                             "100"});
 #line 108
- testRunner.And("I fill in the new product\'s details", ((string)(null)), table38, "And ");
+ testRunner.And("I set the new product\'s Name and details", ((string)(null)), table38, "And ");
 #line hidden
 #line 113
  testRunner.And("I select Adauga button from \'Produse\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -592,7 +592,7 @@ this.FeatureBackground();
                             "Stoc disponibil",
                             "15"});
 #line 125
- testRunner.And("I fill in the new product\'s details", ((string)(null)), table40, "And ");
+ testRunner.And("I set the new product\'s Name and details", ((string)(null)), table40, "And ");
 #line hidden
 #line 130
  testRunner.And("I select Adauga button from \'Produse\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

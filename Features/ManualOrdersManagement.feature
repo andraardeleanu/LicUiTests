@@ -1,5 +1,6 @@
 @ManualOrdersManagement
 Feature: ManualOrdersManagement
+As a Licenta UI consumer, I want to be able to manage manual orders
 
 Background:
 	Given I navigate to Licenta app
@@ -14,7 +15,6 @@ Scenario: Successfully display orders for admin
 	Then I'm successfully logged into Licenta app with user A
 	When I navigate to 'Comenzi' tab
 	Then all the orders are displayed through the table
-	And the button Creeaza comanda manual is not avaialble for the admin
 	And the button Creeaza comanda manual is not avaialble for the admin
 	
 @SmokeTests

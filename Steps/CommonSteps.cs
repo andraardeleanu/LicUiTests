@@ -15,6 +15,7 @@ namespace LicUiTests.Steps
         {
             Sync.FindElementWait(By.CssSelector(".chakra-alert__title.css-tidvy5"));
             LicentaPages.CommonPage.ToastMessage.Text.Should().Be(toastMessage);
+            Sync.ExplicitWait(1);
         }
 
         [When(@"I select (.*) button from '(.*)' page")]
@@ -49,6 +50,7 @@ namespace LicUiTests.Steps
         }
 
         [When(@"I navigate to '(.*)' tab")]
+        [Then(@"I navigate to '(.*)' tab")]
         public void WhenINavigateToTab(string tab)
         {
             Sync.ExplicitWait(1);

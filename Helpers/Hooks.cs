@@ -2,6 +2,7 @@
 using AventStack.ExtentReports.Gherkin.Model;
 using BoDi;
 using OpenQA.Selenium;
+using System.Xml.Linq;
 using TechTalk.SpecFlow;
 
 namespace LicUiTests.Helpers
@@ -11,25 +12,12 @@ namespace LicUiTests.Helpers
     {
         public readonly ScenarioContext _scenarioContext;
         public readonly IObjectContainer _objectContainer;
-        private static ExtentTest _featureName;
-        private static ExtentTest _scenario;
-        private static ExtentReports _extent;
-
-        private static string _reportingPath = Path.Combine(Environment.CurrentDirectory + "/TestReports");
-        private static string _screenshotsPath = Path.Combine(_reportingPath + "/Screenshots");
 
         public Hooks(IObjectContainer objectContainer, ScenarioContext scenarioContext)
         {
             _objectContainer = objectContainer;
             _scenarioContext = scenarioContext;
         }
-        /*
-        [BeforeScenario]
-        public void BeforeScenario()
-        {
-            _scenario = _featureName.CreateNode<Scenario>(_scenarioContext.ScenarioInfo.Title);
-            _objectContainer.RegisterInstanceAs(WebDriver.Driver);
-        }*/
 
         [BeforeScenario]
         public void MaximizeWindow()
@@ -42,101 +30,89 @@ namespace LicUiTests.Helpers
         {
             WebDriver.Quit();
         }
-        /*
-        [BeforeFeature]
-        public static void BeforeFeature(FeatureContext featureContext)
-        {
-            _featureName = _extent.CreateTest<Feature>(featureContext.FeatureInfo.Title);
-        }*/
-
-        [AfterFeature]
-        public static void SaveReport()
-        {
-            _extent.Flush();
-        }
 
         [AfterScenario("CompanyCleanUp")]
         public void CompanyCleanUp()
         {
-            string cui = _scenarioContext.Get<string>("CUI");            
+            string cui = _scenarioContext.Get<string>("CUI");
             DbAccess.CompanyCleanUp(cui);
         }
 
+        [AfterScenario("ResetCompanyName")]
+        public void ResetCompanyName()
+        {
+            string name = _scenarioContext.Get<string>("Name");
+            DbAccess.ResetCompanyName(name);
+        }
 
         [AfterScenario("WorkpointCleanUp")]
         public void WorkpointCleanUp()
         {
-            string workpointName = _scenarioContext.Get<string>("workpoint");
-            DbAccess.WorkpointCleanUp(workpointName);
+            string name = _scenarioContext.Get<string>("workpoint");
+            DbAccess.WorkpointCleanUp(name);
+        }
+
+        [AfterScenario("ResetWorkpointData")]
+        public void ResetWorkpointData()
+        {
+            string name = _scenarioContext.Get<string>("Name");
+            DbAccess.ResetWorkpointData(name);
         }
 
         [AfterScenario("ProductCleanUp")]
         public void ProductCleanUp()
         {
-            string productName = _scenarioContext.Get<string>("product");
-            DbAccess.ProductCleanUp(productName);
+            string name = _scenarioContext.Get<string>("Name");
+            DbAccess.ProductCleanUp(name);
+        }
+
+        [AfterScenario("ResetProductName")]
+        public void ResetProductName()
+        {
+            string name = _scenarioContext.Get<string>("Name");
+            DbAccess.ResetProductName(name);
+        }
+
+        [AfterScenario("OrderCleanUp")]
+        public void OrderCleanUp()
+        {
+            string orderNo = _scenarioContext.Get<string>("OrderNo");
+            DbAccess.OrderCleanUp(orderNo);
+        }
+
+        [AfterScenario("OrderProductsReset")]
+        public void OrderProductsReset()
+        {
+            string productId = _scenarioContext.Get<string>("productId");
+            DbAccess.OrderProductsReset(productId);
+        }
+
+        [AfterScenario("BillCleanUp")]
+        public void BillCleanUp()
+        {
+            string OrderNo = _scenarioContext.Get<string>("OrderNo");
+            DbAccess.BillCleanUp(OrderNo);
         }
 
         [AfterScenario("StockReset")]
         public void StockReset()
         {
-            string productName = _scenarioContext.Get<string>("product");
-            DbAccess.StockReset(productName);
+            string Name = _scenarioContext.Get<string>("product");
+            DbAccess.StockReset(Name);
         }
 
-        [AfterScenario("UpdatedWorkpointCleanUp")]
-        public void UpdatedWorkpointCleanUp()
+        [AfterScenario("UserCleanUp")]
+        public void UserCleanUp()
         {
-            string workpointName = _scenarioContext.Get<string>("updatedWorkpoint");
-            DbAccess.WorkpointCleanUp(workpointName);
+            string username = _scenarioContext.Get<string>("customer");
+            DbAccess.UserCleanUp(username);
         }
-        /*
-        [AfterStep]
-        public void InsertReportingSteps()
-        {
-            var stepType = _scenarioContext.StepContext.StepInfo.StepDefinitionType.ToString();
 
-            if (_scenarioContext.TestError == null)
-            {
-                if (stepType == "Given")
-                    _scenario.CreateNode<Given>(_scenarioContext.StepContext.StepInfo.Text);
-                else if (stepType == "When")
-                    _scenario.CreateNode<When>(_scenarioContext.StepContext.StepInfo.Text);
-                else if (stepType == "Then")
-                    _scenario.CreateNode<Then>(_scenarioContext.StepContext.StepInfo.Text);
-                else if (stepType == "And")
-                    _scenario.CreateNode<And>(_scenarioContext.StepContext.StepInfo.Text);
-            }
-            else if (_scenarioContext.TestError != null)
-            {
-                if (stepType == "Given")
-                {
-                    _scenario
-                        .CreateNode<Given>(_scenarioContext.StepContext.StepInfo.Text)
-                        .Fail(_scenarioContext.TestError.Message)
-                        .AddScreenCaptureFromPath(TakeScreenshot());
-                }
-                else if (stepType == "When")
-                    _scenario
-                        .CreateNode<When>(_scenarioContext.StepContext.StepInfo.Text)
-                        .Fail(_scenarioContext.TestError.Message)
-                        .AddScreenCaptureFromPath(TakeScreenshot());
-                else if (stepType == "Then")
-                {
-                    _scenario
-                        .CreateNode<Then>(_scenarioContext.StepContext.StepInfo.Text)
-                        .Fail(_scenarioContext.TestError.Message)
-                        .AddScreenCaptureFromPath(TakeScreenshot());
-                }
-            }
-        }
-        public string TakeScreenshot()
+        [AfterScenario("ResetFirstname")]
+        public void ResetFirstname()
         {
-            var title = _scenarioContext.ScenarioInfo.Title;
-            var fileName = $@"{_screenshotsPath}\{title + " - " + DateTime.Now.ToString("dd-MMM-yyyy hh.mm.ss")}.png";
-            Screenshot file = ((ITakesScreenshot)WebDriver.Driver).GetScreenshot();
-            file.SaveAsFile(fileName, ScreenshotImageFormat.Png);
-            return fileName;
-        }*/
+            string firstname = _scenarioContext.Get<string>("firstname");
+            DbAccess.ResetFirstname(firstname);
+        }
     }
 }

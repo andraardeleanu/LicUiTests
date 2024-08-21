@@ -17,6 +17,7 @@ namespace LicUiTests.Steps
         }
 
         [Given(@"I navigate to Login page")]
+        [When(@"I navigate to Login page")]
         public void GivenINavigateToLoginPage()
         {
             Sync.ExplicitWait(2);
@@ -33,6 +34,7 @@ namespace LicUiTests.Steps
             LicentaPages.LoginPage.PasswordField.SendKeys(dictionary["password"]);
             Sync.ExplicitWait(1);
             LicentaPages.LoginPage.LoginButton.Click();
+            Sync.ExplicitWait(1);
         }
 
         [Then(@"I'm successfully logged into Licenta app with user (.*)")]
@@ -63,7 +65,6 @@ namespace LicUiTests.Steps
         {
             Sync.FindElementWait(By.XPath("//button[contains(text(),'Intra in cont')]")).Displayed.Should().Be(true);
             Sync.FindElementWait(By.XPath($"//h2[contains(@class,'chakra-heading css-1shalku') and (text()='{message}')]")).Displayed.Should().Be(true);
-            Sync.ExplicitWait(1);
         }
     }
 }

@@ -25,7 +25,7 @@ namespace LicUiTests.Steps
             LicentaPages.ProductsPage.ProductNameTableHead.Displayed.Should().Be(true);
         }
 
-        [When(@"I fill in the new (.*)'s details")]
+        [When(@"I set the new product's (.*) and details")]
         public void WhenIFillInTheNewProductsDetails(string newProductKey, Table newProductTable)
         {
             Sync.ExplicitWait(1);
@@ -46,7 +46,7 @@ namespace LicUiTests.Steps
             LicentaPages.ProductsPage.AvailableStockField.SendKeys(dictionary["Stoc disponibil"]);
         }
 
-        [Then(@"I confirm the new (.*) is displayed through products table")]
+        [Then(@"I confirm the new product's (.*) is displayed through products table")]
         public void ThenIConfirmTheNewIsDisplayedThroughProductsTable(string newProductKey)
         {
             Sync.ExplicitWait(1);

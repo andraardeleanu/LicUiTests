@@ -24,7 +24,7 @@ namespace LicUiTests.Pages
         [FindsBy(How = How.Id, Using = "availableStock")]
         public IWebElement AvailableStockField;
 
-        [FindsBy(How = How.XPath, Using = "//button[contains(@class,'chakra-button css-1j1ql7x')]")]
+        [FindsBy(How = How.CssSelector, Using = ".productNameFilterIcon")]
         public IWebElement ProductNameFilter;
 
         [FindsBy(How = How.XPath, Using = "//div[contains(@class,'chakra-alert__desc css-161kwbg')]")]

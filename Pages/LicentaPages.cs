@@ -18,5 +18,6 @@ namespace LicUiTests.Pages
         public static ProductsPage ProductsPage => GetPage<ProductsPage>();
         public static OrdersPage OrdersPage => GetPage<OrdersPage>();
         public static StockPage StockPage => GetPage<StockPage>();
+        public static UsersPage UsersPage => GetPage<UsersPage>();
     }
 }

@@ -51,10 +51,11 @@ Scenario: Cannot create a company with an already existing name
 	And I select Adauga button from 'Creaza companie' page
 	Then the following error message is displayed: Exista deja o companie cu acest nume.
 	
-@RegressionTests
+@RegressionTests @ResetCompanyName
 Scenario: Successfully update the name of an existing company
-	When I select 'Modifica companie' button from Companii tab
-	And I set the new Company Name: Company Test 2
+	When I search for Update Company Test-ABC on Companies tab content
+	And I select 'Modifica companie' button from Companii tab
+	And I set the new Company Name: Update Company Test-XYZ
 	And I select Actualizeaza button from 'Creaza companie' page
 	Then the following toast message is displayed: Compania a fost actualizata cu succes.
 

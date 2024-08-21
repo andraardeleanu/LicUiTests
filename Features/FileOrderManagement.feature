@@ -1,5 +1,6 @@
 @FileOrderManagement
 Feature: FileOrderManagement
+As a Licenta UI consumer, I want to be able to manage file orders
 
 Background:
 	Given I navigate to Licenta app
@@ -56,7 +57,7 @@ Scenario: File must contain valid products in order to upload it
 	And I select Demo Workpoint workpoint for my new file order
 	And I upload the file InvalidProduct.csv for the new order
 	And I select Creeaza comanda automat button from 'Comenzi' tab
-	Then the following error message is displayed: Produs invalid.
+	Then the following error message is displayed: Produsul cautat nu exista.
 
 @SmokeTests
 Scenario: File orders cannot be placed if there is not enough available stock

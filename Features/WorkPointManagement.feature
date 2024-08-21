@@ -1,8 +1,8 @@
 @WorkPointManagement
 Feature: WorkPointManagement
 	As an admin
-	I want to be able to fill in workpoint forms
-	In order manage them 
+	I want to be able to create and update workpoints
+	In order to manage them properly
 
 Background:
 	Given I navigate to Licenta app
@@ -14,7 +14,7 @@ Background:
 	Then I'm successfully logged into Licenta app with user C
 
 @SmokeTests @WorkpointCleanUp
-Scenario Outline: Successfully create a new workpoint within a company
+Scenario: Successfully create a new workpoint within a company
 	When I select 'Adauga punct de lucru' button from Puncte de lucru tab
 	And I fill in workpoint's new details
 		| key     | value          |

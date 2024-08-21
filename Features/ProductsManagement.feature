@@ -36,14 +36,14 @@ Scenario: Successfully add a new product as admin
 	Then I'm successfully logged into Licenta app with user A
 	When I navigate to 'Produse' tab
 	And I select Adauga produs button from 'Produse' tab
-	And I fill in the new product's details
+	And I set the new product's Name and details
 		| key             | value       |
 		| Nume produs     | Produs Test |
 		| Pret produs     | 250.99      |
 		| Stoc disponibil | 100         |
 	And I select Adauga button from 'Produse' tab
 	Then the following toast message is displayed: Produsul a fost adaugat cu succes!
-	And I confirm the new product is displayed through products table
+	And I confirm the new product's Name is displayed through products table
 
 @SmokeTests
 Scenario: Can't add a new product with stock 0
@@ -54,7 +54,7 @@ Scenario: Can't add a new product with stock 0
 	Then I'm successfully logged into Licenta app with user A
 	When I navigate to 'Produse' tab
 	And I select Adauga produs button from 'Produse' tab
-	And I fill in the new product's details
+	And I set the new product's Name and details
 		| key             | value       |
 		| Nume produs     | Produs Test |
 		| Pret produs     | 250.99      |
@@ -71,7 +71,7 @@ Scenario: Can't add a new product with negative stock
 	Then I'm successfully logged into Licenta app with user A
 	When I navigate to 'Produse' tab
 	And I select Adauga produs button from 'Produse' tab
-	And I fill in the new product's details
+	And I set the new product's Name and details
 		| key             | value       |
 		| Nume produs     | Produs Test |
 		| Pret produs     | 250.99      |
@@ -88,7 +88,7 @@ Scenario: Can't add a new product with price 0
 	Then I'm successfully logged into Licenta app with user A
 	When I navigate to 'Produse' tab
 	And I select Adauga produs button from 'Produse' tab
-	And I fill in the new product's details
+	And I set the new product's Name and details
 		| key             | value       |
 		| Nume produs     | Produs Test |
 		| Pret produs     | 0           |
@@ -105,7 +105,7 @@ Scenario: Can't add a new product with negative price
 	Then I'm successfully logged into Licenta app with user A
 	When I navigate to 'Produse' tab
 	And I select Adauga produs button from 'Produse' tab
-	And I fill in the new product's details
+	And I set the new product's Name and details
 		| key             | value       |
 		| Nume produs     | Produs Test |
 		| Pret produs     | -10         |
@@ -122,7 +122,7 @@ Scenario: Fileds are mandatory for adding a new product
 	Then I'm successfully logged into Licenta app with user A
 	When I navigate to 'Produse' tab
 	And I select Adauga produs button from 'Produse' tab
-	And I fill in the new product's details
+	And I set the new product's Name and details
 		| key             | value |
 		| Nume produs     |       |
 		| Pret produs     | 15    |

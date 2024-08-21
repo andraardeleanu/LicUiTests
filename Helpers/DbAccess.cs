@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
+﻿using System.Data.SqlClient;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Dapper;
 
 namespace LicUiTests.Helpers
@@ -27,9 +22,41 @@ namespace LicUiTests.Helpers
             }
         }
 
+        public static void ResetCompanyName(string Name)
+        {
+            var sql = "SP_ResetCompanyName";
+
+            using (IDbConnection connection = new SqlConnection(AppSettings.LicUiTestsConnectionString))
+            {
+                connection.Open();
+                var affectedRows = connection.Execute(sql,
+                    param: new
+                    {
+                        Name
+                    },
+                    commandType: CommandType.StoredProcedure);
+            }
+        }
+
         public static void WorkpointCleanUp(string Name)
         {
             var sql = "SP_WorkpointCleanUp";
+
+            using (IDbConnection connection = new SqlConnection(AppSettings.LicUiTestsConnectionString))
+            {
+                connection.Open();
+                var affectedRows = connection.Execute(sql,
+                    param: new
+                    {
+                        Name
+                    },
+                    commandType: CommandType.StoredProcedure);
+            }
+        }
+
+        public static void ResetWorkpointData(string Name)
+        {
+            var sql = "SP_ResetWorkpointData";
 
             using (IDbConnection connection = new SqlConnection(AppSettings.LicUiTestsConnectionString))
             {
@@ -59,9 +86,9 @@ namespace LicUiTests.Helpers
             }
         }
 
-        public static void StockReset(string Name)
+        public static void ResetProductName(string Name)
         {
-            var sql = "SP_StockReset";
+            var sql = "SP_ResetProductName";
 
             using (IDbConnection connection = new SqlConnection(AppSettings.LicUiTestsConnectionString))
             {
@@ -70,6 +97,102 @@ namespace LicUiTests.Helpers
                     param: new
                     {
                         Name
+                    },
+                    commandType: CommandType.StoredProcedure);
+            }
+
+        }
+        public static void OrderCleanUp(string OrderNo)
+        {
+            var sql = "SP_OrderCleanUp";
+
+            using (IDbConnection connection = new SqlConnection(AppSettings.LicUiTestsConnectionString))
+            {
+                connection.Open();
+                var affectedRows = connection.Execute(sql,
+                    param: new
+                    {
+                        OrderNo
+                    },
+                    commandType: CommandType.StoredProcedure);
+            }
+        }
+
+        public static void OrderProductsReset(string productId)
+        {
+            var sql = "SP_OrderProductsReset";
+
+            using (IDbConnection connection = new SqlConnection(AppSettings.LicUiTestsConnectionString))
+            {
+                connection.Open();
+                var affectedRows = connection.Execute(sql,
+                    param: new
+                    {
+                        productId
+                    },
+                    commandType: CommandType.StoredProcedure);
+            }
+        }
+
+        public static void BillCleanUp(string OrderNo)
+        {
+            var sql = "SP_BillCleanUp";
+
+            using (IDbConnection connection = new SqlConnection(AppSettings.LicUiTestsConnectionString))
+            {
+                connection.Open();
+                var affectedRows = connection.Execute(sql,
+                    param: new
+                    {
+                        OrderNo
+                    },
+                    commandType: CommandType.StoredProcedure);
+            }
+        }
+
+        public static void StockReset(string Name)
+        {
+            var sql = "SP_StockReset";
+
+            using (IDbConnection connection = new SqlConnection(AppSettings.LicUiTestsConnectionString))
+            {
+                connection.Open();
+                var affectedRows = connection.Execute(sql,
+                     param: new
+                     {
+                         Name
+                     },
+                    commandType: CommandType.StoredProcedure);
+            }
+        }
+
+        public static void UserCleanUp(string username)
+        {
+            var sql = "SP_UserCleanUp";
+
+            using (IDbConnection connection = new SqlConnection(AppSettings.LicUiTestsConnectionString))
+            {
+                connection.Open();
+                var affectedRows = connection.Execute(sql,
+                    param: new
+                    {
+                        username
+                    },
+                    commandType: CommandType.StoredProcedure);
+            }
+        }
+
+        public static void ResetFirstname(string username)
+        {
+            var sql = "SP_ResetFirstname";
+
+            using (IDbConnection connection = new SqlConnection(AppSettings.LicUiTestsConnectionString))
+            {
+                connection.Open();
+                var affectedRows = connection.Execute(sql,
+                    param: new
+                    {
+                        username
                     },
                     commandType: CommandType.StoredProcedure);
             }
