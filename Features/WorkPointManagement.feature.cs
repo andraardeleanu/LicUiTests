@@ -86,17 +86,17 @@ namespace LicUiTests.Features
 #line 9
  testRunner.And("I navigate to Login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table57 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table62 = new TechTalk.SpecFlow.Table(new string[] {
                         "key",
                         "value"});
-            table57.AddRow(new string[] {
+            table62.AddRow(new string[] {
                         "username",
                         "custone"});
-            table57.AddRow(new string[] {
+            table62.AddRow(new string[] {
                         "password",
                         "Admin@123"});
 #line 10
- testRunner.When("I log in with the following credentials", ((string)(null)), table57, "When ");
+ testRunner.When("I log in with the following credentials", ((string)(null)), table62, "When ");
 #line hidden
 #line 14
  testRunner.Then("I\'m successfully logged into Licenta app with user C", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -130,17 +130,17 @@ this.FeatureBackground();
 #line 18
  testRunner.When("I select \'Adauga punct de lucru\' button from Puncte de lucru tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table58 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table63 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table58.AddRow(new string[] {
+                table63.AddRow(new string[] {
                             "Name",
                             "Workpoint Test"});
-                table58.AddRow(new string[] {
+                table63.AddRow(new string[] {
                             "Address",
                             "Address Test"});
 #line 19
- testRunner.And("I fill in workpoint\'s new details", ((string)(null)), table58, "And ");
+ testRunner.And("I fill in workpoint\'s new details", ((string)(null)), table63, "And ");
 #line hidden
 #line 23
  testRunner.When("I select Adauga button from \'Creaza punct de lucru nou\' page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -178,10 +178,10 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 29
- testRunner.When("I search for Demo Workpoint on Workpoints tab content", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I search for Workpoint Demo on Workpoints tab content", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 30
- testRunner.Then("the searched workpoint Demo Workpoint is the only one displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("the searched workpoint Workpoint Demo is the only one displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -222,12 +222,12 @@ this.FeatureBackground();
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Successfully update workpoint\'s details")]
         [NUnit.Framework.CategoryAttribute("SmokeTests")]
-        [NUnit.Framework.CategoryAttribute("UpdatedWorkpointCleanUp")]
+        [NUnit.Framework.CategoryAttribute("WorkpointCleanUp")]
         public void SuccessfullyUpdateWorkpointsDetails()
         {
             string[] tagsOfScenario = new string[] {
                     "SmokeTests",
-                    "UpdatedWorkpointCleanUp"};
+                    "WorkpointCleanUp"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Successfully update workpoint\'s details", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 38
@@ -246,17 +246,17 @@ this.FeatureBackground();
 #line 39
  testRunner.When("I select \'Creeaza punct de lucru\' button from Puncte de lucru tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table59 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table64 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table59.AddRow(new string[] {
+                table64.AddRow(new string[] {
                             "Name",
                             "Workpoint Test"});
-                table59.AddRow(new string[] {
+                table64.AddRow(new string[] {
                             "Address",
                             "Address Test"});
 #line 40
- testRunner.And("I fill in workpoint\'s new details", ((string)(null)), table59, "And ");
+ testRunner.And("I fill in workpoint\'s new details", ((string)(null)), table64, "And ");
 #line hidden
 #line 44
  testRunner.When("I select Adauga button from \'Creaza punct de lucru nou\' page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -270,17 +270,17 @@ this.FeatureBackground();
 #line 47
  testRunner.When("I select Modifica punct de lucru button for the newly added workpoint", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table60 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table65 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
-                            "valuea"});
-                table60.AddRow(new string[] {
+                            "value"});
+                table65.AddRow(new string[] {
                             "Name",
                             "Workpoint Test"});
-                table60.AddRow(new string[] {
+                table65.AddRow(new string[] {
                             "Address",
                             "Address update"});
 #line 48
- testRunner.And("I set the new values of the updatedWorkpoint", ((string)(null)), table60, "And ");
+ testRunner.And("I set the new values of the workpoint", ((string)(null)), table65, "And ");
 #line hidden
 #line 52
  testRunner.And("I select Actualizeaza button from \'Workpoints\' page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -290,7 +290,7 @@ this.FeatureBackground();
                         "ucces.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 54
- testRunner.And("the updated details are displayed in the updatedWorkpoint box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("the updated details are displayed in the workpoint box", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -322,10 +322,10 @@ this.FeatureBackground();
  testRunner.When("I select \'Adauga punct de lucru\' button from Puncte de lucru tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 59
- testRunner.And("I fill in the Workpoint Name field: Demo Workpoint", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I fill in the Workpoint Name field: Workpoint Demo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 60
- testRunner.And("I fill in the Workpoint Address field: Str. Avram Iancu 15, Cluj-Napoca", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I fill in the Workpoint Address field: Address W Demo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 61
  testRunner.And("I select Adauga button from \'Creaza punct de lucru\' page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -437,7 +437,7 @@ this.FeatureBackground();
  testRunner.When("I select \'Adauga punct de lucru\' button from Puncte de lucru tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 80
- testRunner.And("I fill in the Workpoint Name field: Demo Workpoint", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I fill in the Workpoint Name field: Workpoint Demo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 81
  testRunner.And("I select Adauga button from \'Creaza punct de lucru\' page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -474,17 +474,17 @@ this.FeatureBackground();
 #line 86
  testRunner.When("I select \'Creeaza punct de lucru\' button from Puncte de lucru tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table61 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table66 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table61.AddRow(new string[] {
+                table66.AddRow(new string[] {
                             "Name",
                             "Workpoint Test"});
-                table61.AddRow(new string[] {
+                table66.AddRow(new string[] {
                             "Address",
                             "Address Test"});
 #line 87
- testRunner.And("I fill in workpoint\'s new details", ((string)(null)), table61, "And ");
+ testRunner.And("I fill in workpoint\'s new details", ((string)(null)), table66, "And ");
 #line hidden
 #line 91
  testRunner.When("I select Adauga button from \'Creaza punct de lucru nou\' page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -534,17 +534,17 @@ this.FeatureBackground();
 #line 100
  testRunner.When("I select \'Creeaza punct de lucru\' button from Puncte de lucru tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table62 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table67 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table62.AddRow(new string[] {
+                table67.AddRow(new string[] {
                             "Name",
                             "Workpoint Test"});
-                table62.AddRow(new string[] {
+                table67.AddRow(new string[] {
                             "Address",
                             "Address Test"});
 #line 101
- testRunner.And("I fill in workpoint\'s new details", ((string)(null)), table62, "And ");
+ testRunner.And("I fill in workpoint\'s new details", ((string)(null)), table67, "And ");
 #line hidden
 #line 105
  testRunner.When("I select Adauga button from \'Creaza punct de lucru nou\' page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");

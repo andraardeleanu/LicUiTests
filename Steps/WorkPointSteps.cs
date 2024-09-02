@@ -90,7 +90,7 @@ namespace LicUiTests.Steps
             LicentaPages.WorkPointPage.NewWorkPointAddressField.Clear();
             LicentaPages.WorkPointPage.NewWorkPointAddressField.SendKeys(dictionary["Address"]);
 
-            scenarioContext.Add(updatedWorkpointKey, newWorkpoint);
+            Utils.AddOrUpdateDataInScenarioContext(scenarioContext, updatedWorkpointKey, newWorkpoint);
         }
 
         [Then(@"the updated details are displayed in the (.*) box")]

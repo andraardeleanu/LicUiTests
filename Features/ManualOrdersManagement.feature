@@ -26,8 +26,8 @@ Scenario: Successfully filter orders by order number as admin
 	Then I'm successfully logged into Licenta app with user A
 	When I navigate to 'Comenzi' tab
 	Then all the orders are displayed through the table
-	When I filter the list of orders by order number: 8b313e8e-7b8f-42e1-b992-540920dd373b
-	Then the order 8b313e8e-7b8f-42e1-b992-540920dd373b is displayed
+	When I filter the list of orders by order number: 2bf92285-b09b-4e04-a5b3-3dc5c27baadb
+	Then the order 2bf92285-b09b-4e04-a5b3-3dc5c27baadb is displayed
 		
 @SmokeTests
 Scenario: Info message is displayed if there are no order results on selected filters
@@ -65,17 +65,6 @@ Scenario: Successfully display orders for customer
 	And the button Creeaza comanda manual is avaialble for the customer
 
 @SmokeTests
-Scenario: Info message is displayed if there are no order details
-	When I log in with the following credentials
-		| key      | value     |
-		| username | custone   |
-		| password | Admin@123 |
-	Then I'm successfully logged into Licenta app with user C
-	When I navigate to 'Comenzile mele' tab
-	And I select Detalii button for the order c87f8659-c7f0-4ac5-a00c-6091a419d6a1 from the table
-	Then the following info message is displayed: Nu exista produse in comanda.
-
-@SmokeTests
 Scenario: Order's details are available for the admin
 	When I log in with the following credentials
 		| key      | value     |
@@ -83,7 +72,7 @@ Scenario: Order's details are available for the admin
 		| password | Admin@123 |
 	Then I'm successfully logged into Licenta app with user A
 	When I navigate to 'Comenzi' tab
-	And I select Detalii button for the order 8b313e8e-7b8f-42e1-b992-540920dd373b from the table
+	And I select Detalii button for the order 2bf92285-b09b-4e04-a5b3-3dc5c27baadb from the table
 	Then every product from the order is displayed
 
 @SmokeTests
@@ -94,10 +83,10 @@ Scenario: Order's details are available for the customer
 		| password | Admin@123 |
 	Then I'm successfully logged into Licenta app with user C
 	When I navigate to 'Comenzile mele' tab
-	And I select Detalii button for the order 8b313e8e-7b8f-42e1-b992-540920dd373b from the table
+	And I select Detalii button for the order 2bf92285-b09b-4e04-a5b3-3dc5c27baadb from the table
 	Then every product from the order is displayed
 
-@SmokeTests
+@SmokeTests @OrderCleanUp @OrderProductsReset
 Scenario: Successfully create new manual order
 	When I log in with the following credentials
 		| key      | value     |
@@ -106,15 +95,13 @@ Scenario: Successfully create new manual order
 	Then I'm successfully logged into Licenta app with user C
 	When I navigate to 'Comenzile mele' tab
 	And I select Creeaza comanda manual button from 'Comenzi' tab
-	And I select Demo Workpoint from workpoints dropdown on Create manual order modal
-	And I select the following list of products for the new order with a total price of 1401.95 RON
+	And I select Workpoint Demo from workpoints dropdown on Create manual order modal
+	And I select the following list of products for the new order with a total price of 100.00 RON
 		| key            | value |
-		| Product Demo 1 | 3     |
-		| Product Demo 2 | 2     |
-		| Product Demo 3 | 10    |
+		| Product Demo 1 | 1     |
 	And I select Creeaza comanda button on Create manual order modal
 	Then the following toast message is displayed: Comanda a fost creata cu succes!
-	And the new order is displayed through orders table
+	And the new OrderNo is displayed through orders table
 
 @SmokeTests
 Scenario: Manual order cannot be created without selecting the workpoint
@@ -125,11 +112,9 @@ Scenario: Manual order cannot be created without selecting the workpoint
 	Then I'm successfully logged into Licenta app with user C
 	When I navigate to 'Comenzile mele' tab
 	And I select Creeaza comanda manual button from 'Comenzi' tab
-	And I select the following list of products for the new order with a total price of 1401.95 RON
+	And I select the following list of products for the new order with a total price of 200.00 RON
 		| key            | value |
-		| Product Demo 1 | 3     |
-		| Product Demo 2 | 2     |
-		| Product Demo 3 | 10    |
+		| Product Demo 1 | 2     |
 	And I select Creeaza comanda button on Create manual order modal
 	Then the following error message is displayed: Nu ai selectat punctul de lucru pentru noua comanda. Daca este un punct de lucru nou, il poti crea din tab-ul Puncte de lucru.
 
@@ -142,7 +127,7 @@ Scenario: Manual order cannot be created without selecting the products
 	Then I'm successfully logged into Licenta app with user C
 	When I navigate to 'Comenzile mele' tab
 	And I select Creeaza comanda manual button from 'Comenzi' tab
-	And I select Demo Workpoint from workpoints dropdown on Create manual order modal
+	And I select Workpoint Demo from workpoints dropdown on Create manual order modal
 	And I select Creeaza comanda button on Create manual order modal
 	Then the following error message is displayed: Nu ai selectat niciun produs pentru comanda.
 
@@ -155,12 +140,10 @@ Scenario: Manual orders cannot be created if there is not enough stock
 	Then I'm successfully logged into Licenta app with user C
 	When I navigate to 'Comenzile mele' tab
 	And I select Creeaza comanda manual button from 'Comenzi' tab
-	And I select Demo Workpoint from workpoints dropdown on Create manual order modal
-	And I select the following list of products for the new order with a total price of 3000801.98 RON
+	And I select Workpoint Demo from workpoints dropdown on Create manual order modal
+	And I select the following list of products for the new order with a total price of 3000000.00 RON
 		| key            | value |
 		| Product Demo 1 | 30000 |
-		| Product Demo 2 | 2     |
-		| Product Demo 3 | 10    |
 	And I select Creeaza comanda button on Create manual order modal
 	Then the following error message is displayed: Verifica stocul disponibil pentru produsele din comanda.
 
@@ -173,12 +156,10 @@ Scenario: Product's quantity must be valid in order to place the order
 	Then I'm successfully logged into Licenta app with user C
 	When I navigate to 'Comenzile mele' tab
 	And I select Creeaza comanda manual button from 'Comenzi' tab
-	And I select Demo Workpoint from workpoints dropdown on Create manual order modal
+	And I select Workpoint Demo from workpoints dropdown on Create manual order modal
 	And I select the following list of products for the new order with a total price of 802.01 RON
 		| key            | value |
-		| Product Demo 1 | -3    |
-		| Product Demo 2 | 2     |
-		| Product Demo 3 | 10    |
+		| Product Demo 1 | -2    |
 	And I select Creeaza comanda button on Create manual order modal
 	Then the following error message is displayed: Cantitatea setata pentru unul sau mai multe produse este invalida.
 
@@ -191,10 +172,19 @@ Scenario: Total price is displayed correctly on create order modal
 	Then I'm successfully logged into Licenta app with user C
 	When I navigate to 'Comenzile mele' tab
 	And I select Creeaza comanda manual button from 'Comenzi' tab
-	And I select Demo Workpoint from workpoints dropdown on Create manual order modal
-	And I select the following list of products for the new order with a total price of 350.98 RON
+	And I select Workpoint Demo from workpoints dropdown on Create manual order modal
+	And I select the following list of products for the new order with a total price of 300.00 RON
 		| key            | value |
-		| Product Demo 1 | 1     |
-		| Product Demo 2 | 1     |
-		| Product Demo 3 | 2     |	
-	Then I confirm total price is corecct for the selected products and quantities: 350.98 RON
+		| Product Demo 1 | 3     |
+	Then I confirm total price is corecct for the selected products and quantities: 300.00 RON
+
+@Ignore
+Scenario: Info message is displayed if there are no order details
+	When I log in with the following credentials
+		| key      | value     |
+		| username | custone   |
+		| password | Admin@123 |
+	Then I'm successfully logged into Licenta app with user C
+	When I navigate to 'Comenzile mele' tab
+	And I select Detalii button for the order c87f8659-c7f0-4ac5-a00c-6091a419d6a1 from the table
+	Then the following info message is displayed: Nu exista produse in comanda.

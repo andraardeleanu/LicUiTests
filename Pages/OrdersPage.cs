@@ -65,6 +65,11 @@ namespace LicUiTests.Pages
         [FindsBy(How = How.Id, Using = "uploadedFile")]
         public IWebElement FileUploadInput;
 
+        [FindsBy(How = How.XPath, Using = "(//button[contains(@class,'chakra-button css-t9vlzo') and (text()='Modifica status')])[1]")]
+        public IWebElement UpdateFirstOrderStatus;
+        
+        [FindsBy(How = How.XPath, Using = "(//button[contains(@class,'chakra-button css-t9vlzo') and (text()='Genereaza si descarca factura')])[1]")]
+        public IWebElement GenerateOrderBillButton;
 
         public IWebElement GetOrderByNumber(string companyName)
         {
@@ -86,6 +91,19 @@ namespace LicUiTests.Pages
         public IWebElement GetStatusFromFilter(string status)
         {
             return Helpers.WebDriver.Driver.FindElement(By.XPath($"//select[contains(@class,'chakra-select statusFilter css-1gmqjwm')]//option[text()='{status}']"));
+        }
+        public IWebElement GetFirstOrderNo()
+        {
+            return Helpers.WebDriver.Driver.FindElement(By.XPath("//tr/td[2]"));
+        }
+
+        public IWebElement GetProductPrice(string product)
+        {
+            return Helpers.WebDriver.Driver.FindElement(By.XPath($"//tr/td[contains(@class,'css-1eyncsv') and (text()='{product}')]/following-sibling::td[text()]"));
+        }
+        public IWebElement ProductQuantity(string product)
+        {
+            return Helpers.WebDriver.Driver.FindElement(By.XPath($"//tr/td[contains(@class,'css-1eyncsv') and (text()='{product}')]/following-sibling::td/input[contains(@id,'quantity')]"));
         }
     }
 }

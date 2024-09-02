@@ -21,7 +21,7 @@ Scenario: Successfully create a new user
 		| key      | value           |
 		| Prenume  | Customer        |
 		| Nume     | UI Test         |
-		| Companie | Demo Company    |
+		| Companie | Company Demo    |
 		| Username | customerUItest  |
 		| Parola   | Admin@123       |
 		| Email    | customerui@test |
@@ -36,7 +36,7 @@ Scenario: Cannot create a new user with and existing username
 		| key      | value           |
 		| Prenume  | Customer        |
 		| Nume     | UI Test         |
-		| Companie | Demo Company    |
+		| Companie | Company Demo    |
 		| Username | custone         |
 		| Parola   | Admin@123       |
 		| Email    | customerui@test |
@@ -50,7 +50,7 @@ Scenario: Cannot create a new user with without filling in all the data
 		| key      | value        |
 		| Prenume  | Customer     |
 		| Nume     | UI Test      |
-		| Companie | Demo Company |
+		| Companie | Company Demo |
 		| Username |              |
 		| Parola   | Admin@123    |
 		| Email    |              |
@@ -64,7 +64,7 @@ Scenario: Successfully update a new user
 		| key      | value           |
 		| Prenume  | Customer        |
 		| Nume     | UI Test         |
-		| Companie | Demo Company    |
+		| Companie | Company Demo    |
 		| Username | customerUItest  |
 		| Parola   | Admin@123       |
 		| Email    | customerui@test |
@@ -86,7 +86,7 @@ Scenario: Successfully update user's password
 		| key      | value           |
 		| Prenume  | Customer        |
 		| Nume     | UI Test         |
-		| Companie | Demo Company    |
+		| Companie | Company Demo    |
 		| Username | customerUItest  |
 		| Parola   | Admin@123       |
 		| Email    | customerui@test |

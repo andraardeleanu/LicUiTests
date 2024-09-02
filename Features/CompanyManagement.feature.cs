@@ -86,17 +86,17 @@ namespace LicUiTests.Features
 #line 9
  testRunner.And("I navigate to Login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
                         "key",
                         "value"});
-            table1.AddRow(new string[] {
+            table5.AddRow(new string[] {
                         "username",
                         "admin"});
-            table1.AddRow(new string[] {
+            table5.AddRow(new string[] {
                         "password",
                         "Admin@123"});
 #line 10
- testRunner.When("I log in with the following credentials", ((string)(null)), table1, "When ");
+ testRunner.When("I log in with the following credentials", ((string)(null)), table5, "When ");
 #line hidden
 #line 14
  testRunner.Then("I\'m successfully logged into Licenta app with user A", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -130,14 +130,14 @@ this.FeatureBackground();
 #line 18
  testRunner.When("I select \'Adauga companie\' button from Companii tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table2.AddRow(new string[] {
+                table6.AddRow(new string[] {
                             "Name",
-                            "Company Demo"});
+                            "Company Test"});
 #line 19
- testRunner.And("I fill in company\'s new details with a new CUI", ((string)(null)), table2, "And ");
+ testRunner.And("I fill in company\'s new details with a new CUI", ((string)(null)), table6, "And ");
 #line hidden
 #line 22
  testRunner.When("I select Adauga button from \'Creaza companie\' page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -370,10 +370,10 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 64
- testRunner.When("I select the workpoint option button from the Demo Company", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I select the workpoint option button from the Company Demo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 65
- testRunner.Then("the company\'s workpoint Demo Workpoint is displayed through table: Demo Company", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("the company\'s workpoint Workpoint Demo is displayed through table: Company Demo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -434,10 +434,10 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 74
- testRunner.When("I search for Demo Company on Companies tab content", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I search for Company Demo on Companies tab content", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 75
- testRunner.Then("the searched company Demo Company is the only one displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("the searched company Company Demo is the only one displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

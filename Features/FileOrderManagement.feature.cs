@@ -85,17 +85,17 @@ namespace LicUiTests.Features
 #line 7
  testRunner.And("I navigate to Login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table7 = new TechTalk.SpecFlow.Table(new string[] {
                         "key",
                         "value"});
-            table3.AddRow(new string[] {
+            table7.AddRow(new string[] {
                         "username",
                         "custone"});
-            table3.AddRow(new string[] {
+            table7.AddRow(new string[] {
                         "password",
                         "Admin@123"});
 #line 8
- testRunner.When("I log in with the following credentials", ((string)(null)), table3, "When ");
+ testRunner.When("I log in with the following credentials", ((string)(null)), table7, "When ");
 #line hidden
 #line 12
  testRunner.Then("I\'m successfully logged into Licenta app with user C", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -104,11 +104,15 @@ namespace LicUiTests.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Successfully place order from file")]
-        [NUnit.Framework.IgnoreAttribute("Ignored scenario")]
+        [NUnit.Framework.CategoryAttribute("SmokeTests")]
+        [NUnit.Framework.CategoryAttribute("OrderProductsReset")]
+        [NUnit.Framework.CategoryAttribute("OrderCleanUp")]
         public void SuccessfullyPlaceOrderFromFile()
         {
             string[] tagsOfScenario = new string[] {
-                    "Ignore"};
+                    "SmokeTests",
+                    "OrderProductsReset",
+                    "OrderCleanUp"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Successfully place order from file", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 15
@@ -128,10 +132,10 @@ this.FeatureBackground();
  testRunner.When("I navigate to \'Comenzile mele\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 17
- testRunner.And("I select Demo Workpoint workpoint for my new file order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I select Workpoint Demo workpoint for my new file order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 18
- testRunner.And("I upload the file ThreeProductsOrder.csv for the new order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I upload the file FileOrder.csv for the new order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 19
  testRunner.And("I select Creeaza comanda automat button from \'Comenzi\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -140,7 +144,7 @@ this.FeatureBackground();
  testRunner.Then("the following toast message is displayed: Comanda plasata cu succes.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 21
- testRunner.And("the new order is displayed through orders table", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("the new OrderNo is displayed through orders table", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -172,7 +176,7 @@ this.FeatureBackground();
  testRunner.When("I navigate to \'Comenzile mele\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 26
- testRunner.And("I upload the file ThreeProductsOrder.csv for the new order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I upload the file FileOrder.csv for the new order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 27
  testRunner.And("I select Creeaza comanda automat button from \'Comenzi\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -212,7 +216,7 @@ this.FeatureBackground();
  testRunner.When("I navigate to \'Comenzile mele\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 33
- testRunner.And("I select Demo Workpoint workpoint for my new file order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I select Workpoint Demo workpoint for my new file order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 34
  testRunner.And("I upload the file AnotherFileExtension.pdf for the new order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -253,7 +257,7 @@ this.FeatureBackground();
  testRunner.When("I navigate to \'Comenzile mele\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 41
- testRunner.And("I select Demo Workpoint workpoint for my new file order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I select Workpoint Demo workpoint for my new file order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 42
  testRunner.And("I upload the file EmptyFile.csv for the new order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -295,7 +299,7 @@ this.FeatureBackground();
  testRunner.When("I navigate to \'Comenzile mele\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 49
- testRunner.And("I select Demo Workpoint workpoint for my new file order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I select Workpoint Demo workpoint for my new file order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 50
  testRunner.And("I upload the file WrongFormat.csv for the new order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -336,7 +340,7 @@ this.FeatureBackground();
  testRunner.When("I navigate to \'Comenzile mele\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 57
- testRunner.And("I select Demo Workpoint workpoint for my new file order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I select Workpoint Demo workpoint for my new file order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 58
  testRunner.And("I upload the file InvalidProduct.csv for the new order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -377,7 +381,7 @@ this.FeatureBackground();
  testRunner.When("I navigate to \'Comenzile mele\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 65
- testRunner.And("I select Demo Workpoint workpoint for my new file order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I select Workpoint Demo workpoint for my new file order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 66
  testRunner.And("I upload the file InvalidStock.csv for the new order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -419,7 +423,7 @@ this.FeatureBackground();
  testRunner.When("I navigate to \'Comenzile mele\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 73
- testRunner.And("I select Demo Workpoint workpoint for my new file order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I select Workpoint Demo workpoint for my new file order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 74
  testRunner.And("I upload the file DuplicatedProducts.csv for the new order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -461,7 +465,7 @@ this.FeatureBackground();
  testRunner.When("I navigate to \'Comenzile mele\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 81
- testRunner.And("I select Demo Workpoint workpoint for my new file order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I select Workpoint Demo workpoint for my new file order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 82
  testRunner.And("I upload the file StockLessThan0.csv for the new order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

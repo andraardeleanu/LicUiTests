@@ -110,17 +110,17 @@ this.ScenarioInitialize(scenarioInfo);
 #line 7
 this.FeatureBackground();
 #line hidden
-                TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table8 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table4.AddRow(new string[] {
+                table8.AddRow(new string[] {
                             "username",
                             "admin"});
-                table4.AddRow(new string[] {
+                table8.AddRow(new string[] {
                             "password",
                             "Admin@123"});
 #line 13
- testRunner.When("I log in with the following credentials", ((string)(null)), table4, "When ");
+ testRunner.When("I log in with the following credentials", ((string)(null)), table8, "When ");
 #line hidden
 #line 17
  testRunner.Then("I\'m successfully logged into Licenta app with user A", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -151,17 +151,17 @@ this.ScenarioInitialize(scenarioInfo);
 #line 7
 this.FeatureBackground();
 #line hidden
-                TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table9 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table5.AddRow(new string[] {
+                table9.AddRow(new string[] {
                             "username",
                             "custone"});
-                table5.AddRow(new string[] {
+                table9.AddRow(new string[] {
                             "password",
                             "Admin@123"});
 #line 21
- testRunner.When("I log in with the following credentials", ((string)(null)), table5, "When ");
+ testRunner.When("I log in with the following credentials", ((string)(null)), table9, "When ");
 #line hidden
 #line 25
  testRunner.Then("I\'m successfully logged into Licenta app with user C", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -192,17 +192,17 @@ this.ScenarioInitialize(scenarioInfo);
 #line 7
 this.FeatureBackground();
 #line hidden
-                TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table10 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table6.AddRow(new string[] {
+                table10.AddRow(new string[] {
                             "username",
                             "admin"});
-                table6.AddRow(new string[] {
+                table10.AddRow(new string[] {
                             "password",
                             "Admin@123"});
 #line 29
- testRunner.When("I log in with the following credentials", ((string)(null)), table6, "When ");
+ testRunner.When("I log in with the following credentials", ((string)(null)), table10, "When ");
 #line hidden
 #line 33
  testRunner.Then("I\'m successfully logged into Licenta app with user A", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -219,14 +219,14 @@ this.FeatureBackground();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Error when logging in with wrong credentials")]
+        [NUnit.Framework.DescriptionAttribute("Error when logging in with invalid username")]
         [NUnit.Framework.CategoryAttribute("RegressionTests")]
-        public void ErrorWhenLoggingInWithWrongCredentials()
+        public void ErrorWhenLoggingInWithInvalidUsername()
         {
             string[] tagsOfScenario = new string[] {
                     "RegressionTests"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Error when logging in with wrong credentials", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Error when logging in with invalid username", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 38
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -240,20 +240,61 @@ this.ScenarioInitialize(scenarioInfo);
 #line 7
 this.FeatureBackground();
 #line hidden
-                TechTalk.SpecFlow.Table table7 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table11 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table7.AddRow(new string[] {
+                table11.AddRow(new string[] {
                             "username",
-                            "admin123"});
-                table7.AddRow(new string[] {
+                            "admin12345"});
+                table11.AddRow(new string[] {
                             "password",
-                            "Admin@12345"});
+                            "Admin@123"});
 #line 39
- testRunner.When("I log in with the following credentials", ((string)(null)), table7, "When ");
+ testRunner.When("I log in with the following credentials", ((string)(null)), table11, "When ");
 #line hidden
 #line 43
- testRunner.Then("the following warning message is displayed: Parola nu este corecta!", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("the following warning message is displayed: Numele de utilizator este invalid.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Error when logging in with invalid password")]
+        [NUnit.Framework.CategoryAttribute("RegressionTests")]
+        public void ErrorWhenLoggingInWithInvalidPassword()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "RegressionTests"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Error when logging in with invalid password", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 46
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 7
+this.FeatureBackground();
+#line hidden
+                TechTalk.SpecFlow.Table table12 = new TechTalk.SpecFlow.Table(new string[] {
+                            "key",
+                            "value"});
+                table12.AddRow(new string[] {
+                            "username",
+                            "admin"});
+                table12.AddRow(new string[] {
+                            "password",
+                            "Admin@12345"});
+#line 47
+ testRunner.When("I log in with the following credentials", ((string)(null)), table12, "When ");
+#line hidden
+#line 51
+ testRunner.Then("the following warning message is displayed: Parola nu este corecta.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

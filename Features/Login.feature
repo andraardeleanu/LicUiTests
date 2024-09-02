@@ -35,9 +35,17 @@ Scenario: Successfully disconnect from the App
 	Then I'm successfully disconnected: Pentru a putea utiliza toate functionalitatile, te rugam sa te conectezi.
 
 @RegressionTests
-Scenario: Error when logging in with wrong credentials
+Scenario: Error when logging in with invalid username
+	When I log in with the following credentials
+		| key      | value      |
+		| username | admin12345 |
+		| password | Admin@123  |
+	Then the following warning message is displayed: Numele de utilizator este invalid.
+
+@RegressionTests
+Scenario: Error when logging in with invalid password
 	When I log in with the following credentials
 		| key      | value       |
-		| username | admin123    |
+		| username | admin       |
 		| password | Admin@12345 |
-	Then the following warning message is displayed: Parola nu este corecta!
+	Then the following warning message is displayed: Parola nu este corecta.

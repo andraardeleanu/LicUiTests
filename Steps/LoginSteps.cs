@@ -27,7 +27,7 @@ namespace LicUiTests.Steps
         [When(@"I log in with the following credentials")]
         public void WhenILogInWithTheFollowingCredentials(Table credentialsTable)
         {
-
+            var conn = AesEncryptionService.Encrypt("Server=localhost,1433;Database=licenta;User ID=sa;Password=Password_123#;MultipleActiveResultSets=True;TrustServerCertificate=True;");
             var dictionary = TableExtensions.ToDictionary(credentialsTable);
             Sync.ExplicitWait(1);
             LicentaPages.LoginPage.UsernameField.SendKeys(dictionary["username"]);

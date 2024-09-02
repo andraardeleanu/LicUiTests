@@ -6,6 +6,20 @@ namespace LicUiTests.Helpers
     public static class Utils
     {
         private static readonly Random Random = new Random();
+
+        public static void AddOrUpdateDataInScenarioContext(ScenarioContext scenarioContext, string key, object value)
+        {
+            if (scenarioContext.ContainsKey(key))
+            {
+                scenarioContext.Remove(key);
+                scenarioContext.Add(key, value);
+            }
+            else
+            {
+                scenarioContext.Add(key, value);
+            }
+        }
+
         public static void SwitchToIframe(IWebElement iframe)
         {
             WebDriver.Driver.SwitchTo().DefaultContent();

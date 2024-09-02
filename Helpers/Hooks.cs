@@ -83,8 +83,7 @@ namespace LicUiTests.Helpers
         [AfterScenario("OrderProductsReset")]
         public void OrderProductsReset()
         {
-            string productId = _scenarioContext.Get<string>("productId");
-            DbAccess.OrderProductsReset(productId);
+            DbAccess.OrderProductsReset("1");
         }
 
         [AfterScenario("BillCleanUp")]

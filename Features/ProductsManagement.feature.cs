@@ -109,17 +109,17 @@ this.ScenarioInitialize(scenarioInfo);
 #line 4
 this.FeatureBackground();
 #line hidden
-                TechTalk.SpecFlow.Table table27 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table32 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table27.AddRow(new string[] {
+                table32.AddRow(new string[] {
                             "username",
                             "admin"});
-                table27.AddRow(new string[] {
+                table32.AddRow(new string[] {
                             "password",
                             "Admin@123"});
 #line 10
- testRunner.When("I log in with the following credentials", ((string)(null)), table27, "When ");
+ testRunner.When("I log in with the following credentials", ((string)(null)), table32, "When ");
 #line hidden
 #line 14
  testRunner.Then("I\'m successfully logged into Licenta app with user A", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -159,17 +159,17 @@ this.ScenarioInitialize(scenarioInfo);
 #line 4
 this.FeatureBackground();
 #line hidden
-                TechTalk.SpecFlow.Table table28 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table33 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table28.AddRow(new string[] {
+                table33.AddRow(new string[] {
                             "username",
                             "custone"});
-                table28.AddRow(new string[] {
+                table33.AddRow(new string[] {
                             "password",
                             "Admin@123"});
 #line 21
- testRunner.When("I log in with the following credentials", ((string)(null)), table28, "When ");
+ testRunner.When("I log in with the following credentials", ((string)(null)), table33, "When ");
 #line hidden
 #line 25
  testRunner.Then("I\'m successfully logged into Licenta app with user C", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -211,17 +211,17 @@ this.ScenarioInitialize(scenarioInfo);
 #line 4
 this.FeatureBackground();
 #line hidden
-                TechTalk.SpecFlow.Table table29 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table34 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table29.AddRow(new string[] {
+                table34.AddRow(new string[] {
                             "username",
                             "admin"});
-                table29.AddRow(new string[] {
+                table34.AddRow(new string[] {
                             "password",
                             "Admin@123"});
 #line 32
- testRunner.When("I log in with the following credentials", ((string)(null)), table29, "When ");
+ testRunner.When("I log in with the following credentials", ((string)(null)), table34, "When ");
 #line hidden
 #line 36
  testRunner.Then("I\'m successfully logged into Licenta app with user A", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -232,20 +232,20 @@ this.FeatureBackground();
 #line 38
  testRunner.And("I select Adauga produs button from \'Produse\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table30 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table35 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table30.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Nume produs",
                             "Produs Test"});
-                table30.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Pret produs",
                             "250.99"});
-                table30.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Stoc disponibil",
                             "100"});
 #line 39
- testRunner.And("I set the new product\'s Name and details", ((string)(null)), table30, "And ");
+ testRunner.And("I set the new product\'s Name and details", ((string)(null)), table35, "And ");
 #line hidden
 #line 44
  testRunner.And("I select Adauga button from \'Produse\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -282,17 +282,17 @@ this.ScenarioInitialize(scenarioInfo);
 #line 4
 this.FeatureBackground();
 #line hidden
-                TechTalk.SpecFlow.Table table31 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table36 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table31.AddRow(new string[] {
+                table36.AddRow(new string[] {
                             "username",
                             "admin"});
-                table31.AddRow(new string[] {
+                table36.AddRow(new string[] {
                             "password",
                             "Admin@123"});
 #line 50
- testRunner.When("I log in with the following credentials", ((string)(null)), table31, "When ");
+ testRunner.When("I log in with the following credentials", ((string)(null)), table36, "When ");
 #line hidden
 #line 54
  testRunner.Then("I\'m successfully logged into Licenta app with user A", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -303,20 +303,20 @@ this.FeatureBackground();
 #line 56
  testRunner.And("I select Adauga produs button from \'Produse\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table32 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table37 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table32.AddRow(new string[] {
+                table37.AddRow(new string[] {
                             "Nume produs",
                             "Produs Test"});
-                table32.AddRow(new string[] {
+                table37.AddRow(new string[] {
                             "Pret produs",
                             "250.99"});
-                table32.AddRow(new string[] {
+                table37.AddRow(new string[] {
                             "Stoc disponibil",
                             "0"});
 #line 57
- testRunner.And("I set the new product\'s Name and details", ((string)(null)), table32, "And ");
+ testRunner.And("I set the new product\'s Name and details", ((string)(null)), table37, "And ");
 #line hidden
 #line 62
  testRunner.And("I select Adauga button from \'Produse\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -351,17 +351,17 @@ this.ScenarioInitialize(scenarioInfo);
 #line 4
 this.FeatureBackground();
 #line hidden
-                TechTalk.SpecFlow.Table table33 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table38 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table33.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "username",
                             "admin"});
-                table33.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "password",
                             "Admin@123"});
 #line 67
- testRunner.When("I log in with the following credentials", ((string)(null)), table33, "When ");
+ testRunner.When("I log in with the following credentials", ((string)(null)), table38, "When ");
 #line hidden
 #line 71
  testRunner.Then("I\'m successfully logged into Licenta app with user A", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -372,20 +372,20 @@ this.FeatureBackground();
 #line 73
  testRunner.And("I select Adauga produs button from \'Produse\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table34 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table39 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table34.AddRow(new string[] {
+                table39.AddRow(new string[] {
                             "Nume produs",
                             "Produs Test"});
-                table34.AddRow(new string[] {
+                table39.AddRow(new string[] {
                             "Pret produs",
                             "250.99"});
-                table34.AddRow(new string[] {
+                table39.AddRow(new string[] {
                             "Stoc disponibil",
                             "-10"});
 #line 74
- testRunner.And("I set the new product\'s Name and details", ((string)(null)), table34, "And ");
+ testRunner.And("I set the new product\'s Name and details", ((string)(null)), table39, "And ");
 #line hidden
 #line 79
  testRunner.And("I select Adauga button from \'Produse\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -420,17 +420,17 @@ this.ScenarioInitialize(scenarioInfo);
 #line 4
 this.FeatureBackground();
 #line hidden
-                TechTalk.SpecFlow.Table table35 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table40 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table35.AddRow(new string[] {
+                table40.AddRow(new string[] {
                             "username",
                             "admin"});
-                table35.AddRow(new string[] {
+                table40.AddRow(new string[] {
                             "password",
                             "Admin@123"});
 #line 84
- testRunner.When("I log in with the following credentials", ((string)(null)), table35, "When ");
+ testRunner.When("I log in with the following credentials", ((string)(null)), table40, "When ");
 #line hidden
 #line 88
  testRunner.Then("I\'m successfully logged into Licenta app with user A", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -441,20 +441,20 @@ this.FeatureBackground();
 #line 90
  testRunner.And("I select Adauga produs button from \'Produse\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table36 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table41 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table36.AddRow(new string[] {
+                table41.AddRow(new string[] {
                             "Nume produs",
                             "Produs Test"});
-                table36.AddRow(new string[] {
+                table41.AddRow(new string[] {
                             "Pret produs",
                             "0"});
-                table36.AddRow(new string[] {
+                table41.AddRow(new string[] {
                             "Stoc disponibil",
                             "100"});
 #line 91
- testRunner.And("I set the new product\'s Name and details", ((string)(null)), table36, "And ");
+ testRunner.And("I set the new product\'s Name and details", ((string)(null)), table41, "And ");
 #line hidden
 #line 96
  testRunner.And("I select Adauga button from \'Produse\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -489,17 +489,17 @@ this.ScenarioInitialize(scenarioInfo);
 #line 4
 this.FeatureBackground();
 #line hidden
-                TechTalk.SpecFlow.Table table37 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table42 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table37.AddRow(new string[] {
+                table42.AddRow(new string[] {
                             "username",
                             "admin"});
-                table37.AddRow(new string[] {
+                table42.AddRow(new string[] {
                             "password",
                             "Admin@123"});
 #line 101
- testRunner.When("I log in with the following credentials", ((string)(null)), table37, "When ");
+ testRunner.When("I log in with the following credentials", ((string)(null)), table42, "When ");
 #line hidden
 #line 105
  testRunner.Then("I\'m successfully logged into Licenta app with user A", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -510,20 +510,20 @@ this.FeatureBackground();
 #line 107
  testRunner.And("I select Adauga produs button from \'Produse\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table38 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table43 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table38.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "Nume produs",
                             "Produs Test"});
-                table38.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "Pret produs",
                             "-10"});
-                table38.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "Stoc disponibil",
                             "100"});
 #line 108
- testRunner.And("I set the new product\'s Name and details", ((string)(null)), table38, "And ");
+ testRunner.And("I set the new product\'s Name and details", ((string)(null)), table43, "And ");
 #line hidden
 #line 113
  testRunner.And("I select Adauga button from \'Produse\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -558,17 +558,17 @@ this.ScenarioInitialize(scenarioInfo);
 #line 4
 this.FeatureBackground();
 #line hidden
-                TechTalk.SpecFlow.Table table39 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table44 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table39.AddRow(new string[] {
+                table44.AddRow(new string[] {
                             "username",
                             "admin"});
-                table39.AddRow(new string[] {
+                table44.AddRow(new string[] {
                             "password",
                             "Admin@123"});
 #line 118
- testRunner.When("I log in with the following credentials", ((string)(null)), table39, "When ");
+ testRunner.When("I log in with the following credentials", ((string)(null)), table44, "When ");
 #line hidden
 #line 122
  testRunner.Then("I\'m successfully logged into Licenta app with user A", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -579,20 +579,20 @@ this.FeatureBackground();
 #line 124
  testRunner.And("I select Adauga produs button from \'Produse\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table40 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table45 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table40.AddRow(new string[] {
+                table45.AddRow(new string[] {
                             "Nume produs",
                             ""});
-                table40.AddRow(new string[] {
+                table45.AddRow(new string[] {
                             "Pret produs",
                             "15"});
-                table40.AddRow(new string[] {
+                table45.AddRow(new string[] {
                             "Stoc disponibil",
                             "15"});
 #line 125
- testRunner.And("I set the new product\'s Name and details", ((string)(null)), table40, "And ");
+ testRunner.And("I set the new product\'s Name and details", ((string)(null)), table45, "And ");
 #line hidden
 #line 130
  testRunner.And("I select Adauga button from \'Produse\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -626,17 +626,17 @@ this.ScenarioInitialize(scenarioInfo);
 #line 4
 this.FeatureBackground();
 #line hidden
-                TechTalk.SpecFlow.Table table41 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table46 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table41.AddRow(new string[] {
+                table46.AddRow(new string[] {
                             "username",
                             "admin"});
-                table41.AddRow(new string[] {
+                table46.AddRow(new string[] {
                             "password",
                             "Admin@123"});
 #line 135
- testRunner.When("I log in with the following credentials", ((string)(null)), table41, "When ");
+ testRunner.When("I log in with the following credentials", ((string)(null)), table46, "When ");
 #line hidden
 #line 139
  testRunner.Then("I\'m successfully logged into Licenta app with user A", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -676,17 +676,17 @@ this.ScenarioInitialize(scenarioInfo);
 #line 4
 this.FeatureBackground();
 #line hidden
-                TechTalk.SpecFlow.Table table42 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table47 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table42.AddRow(new string[] {
+                table47.AddRow(new string[] {
                             "username",
                             "admin"});
-                table42.AddRow(new string[] {
+                table47.AddRow(new string[] {
                             "password",
                             "Admin@123"});
 #line 146
- testRunner.When("I log in with the following credentials", ((string)(null)), table42, "When ");
+ testRunner.When("I log in with the following credentials", ((string)(null)), table47, "When ");
 #line hidden
 #line 150
  testRunner.Then("I\'m successfully logged into Licenta app with user A", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -726,17 +726,17 @@ this.ScenarioInitialize(scenarioInfo);
 #line 4
 this.FeatureBackground();
 #line hidden
-                TechTalk.SpecFlow.Table table43 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table48 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table43.AddRow(new string[] {
+                table48.AddRow(new string[] {
                             "username",
                             "admin"});
-                table43.AddRow(new string[] {
+                table48.AddRow(new string[] {
                             "password",
                             "Admin@123"});
 #line 157
- testRunner.When("I log in with the following credentials", ((string)(null)), table43, "When ");
+ testRunner.When("I log in with the following credentials", ((string)(null)), table48, "When ");
 #line hidden
 #line 161
  testRunner.Then("I\'m successfully logged into Licenta app with user A", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -776,17 +776,17 @@ this.ScenarioInitialize(scenarioInfo);
 #line 4
 this.FeatureBackground();
 #line hidden
-                TechTalk.SpecFlow.Table table44 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table49 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table44.AddRow(new string[] {
+                table49.AddRow(new string[] {
                             "username",
                             "custone"});
-                table44.AddRow(new string[] {
+                table49.AddRow(new string[] {
                             "password",
                             "Admin@123"});
 #line 168
- testRunner.When("I log in with the following credentials", ((string)(null)), table44, "When ");
+ testRunner.When("I log in with the following credentials", ((string)(null)), table49, "When ");
 #line hidden
 #line 172
  testRunner.Then("I\'m successfully logged into Licenta app with user C", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -829,17 +829,17 @@ this.ScenarioInitialize(scenarioInfo);
 #line 4
 this.FeatureBackground();
 #line hidden
-                TechTalk.SpecFlow.Table table45 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table50 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table45.AddRow(new string[] {
+                table50.AddRow(new string[] {
                             "username",
                             "custone"});
-                table45.AddRow(new string[] {
+                table50.AddRow(new string[] {
                             "password",
                             "Admin@123"});
 #line 180
- testRunner.When("I log in with the following credentials", ((string)(null)), table45, "When ");
+ testRunner.When("I log in with the following credentials", ((string)(null)), table50, "When ");
 #line hidden
 #line 184
  testRunner.Then("I\'m successfully logged into Licenta app with user C", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");

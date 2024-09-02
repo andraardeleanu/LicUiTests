@@ -26,15 +26,15 @@ Scenario: Successfully create a new workpoint within a company
 
 @SmokeTests
 Scenario: Successfully filter workpoints by name
-	When I search for Demo Workpoint on Workpoints tab content
-	Then the searched workpoint Demo Workpoint is the only one displayed
+	When I search for Workpoint Demo on Workpoints tab content
+	Then the searched workpoint Workpoint Demo is the only one displayed
 
 @RegressionTests
 Scenario: Info message is displayed if the searched workpoint does not exist
 	When I search for No Workpoint on Wokrpoint tab content
 	Then the following tab info message is displayed: Nu s-au gasit puncte de lucru.
 
-@SmokeTests @UpdatedWorkpointCleanUp
+@SmokeTests @WorkpointCleanUp
 Scenario: Successfully update workpoint's details
 	When I select 'Creeaza punct de lucru' button from Puncte de lucru tab
 	And I fill in workpoint's new details
@@ -45,39 +45,39 @@ Scenario: Successfully update workpoint's details
 	Then the following toast message is displayed: Punctul de lucru a fost adaugat.
 	And the new workpoint is displayed through Workpoints page
 	When I select Modifica punct de lucru button for the newly added workpoint
-	And I set the new values of the updatedWorkpoint
-		| key     | valuea         |
+	And I set the new values of the workpoint
+		| key     | value          |
 		| Name    | Workpoint Test |
 		| Address | Address update |
 	And I select Actualizeaza button from 'Workpoints' page
 	Then the following toast message is displayed: Punctul de lucru a fost actualizat cu succes.
-	And the updated details are displayed in the updatedWorkpoint box
+	And the updated details are displayed in the workpoint box
 
 @SmokeTests
 Scenario: Cannot add a new workpoint with an existing name & address
 	When I select 'Adauga punct de lucru' button from Puncte de lucru tab
-	And I fill in the Workpoint Name field: Demo Workpoint
-	And I fill in the Workpoint Address field: Str. Avram Iancu 15, Cluj-Napoca
+	And I fill in the Workpoint Name field: Workpoint Demo
+	And I fill in the Workpoint Address field: Address W Demo
 	And I select Adauga button from 'Creaza punct de lucru' page
 	Then the following error message is displayed: Exista deja un punct de lucru cu acest nume si adresa.
 	
 @RegressionTests
 Scenario: Cannot add a new workpoint without fillin in any fields
-	When I select 'Adauga punct de lucru' button from Puncte de lucru tab	
+	When I select 'Adauga punct de lucru' button from Puncte de lucru tab
 	And I select Adauga button from 'Creaza punct de lucru' page
 	Then the following error message is displayed: Toate campurile sunt obligatorii.
 
 @RegressionTests
 Scenario: Cannot add a new workpoint without fillin in workpoint's name
-	When I select 'Adauga punct de lucru' button from Puncte de lucru tab	
+	When I select 'Adauga punct de lucru' button from Puncte de lucru tab
 	And I fill in the Workpoint Address field: Str. Avram Iancu 15, Cluj-Napoca
 	And I select Adauga button from 'Creaza punct de lucru' page
 	Then the following error message is displayed: Toate campurile sunt obligatorii.
 	
 @RegressionTests
 Scenario: Cannot add a new workpoint without fillin in workpoint's address
-	When I select 'Adauga punct de lucru' button from Puncte de lucru tab	
-	And I fill in the Workpoint Name field: Demo Workpoint
+	When I select 'Adauga punct de lucru' button from Puncte de lucru tab
+	And I fill in the Workpoint Name field: Workpoint Demo
 	And I select Adauga button from 'Creaza punct de lucru' page
 	Then the following error message is displayed: Toate campurile sunt obligatorii.
 	
@@ -106,4 +106,4 @@ Scenario: Workpoints removal can be canceled
 	Then the following toast message is displayed: Punctul de lucru a fost adaugat.
 	When I select Sterge punct de lucru button for the newly added workpoint
 	And I cancel the workpoint removal pop-up message
-	Then  it's confirmed the workpoint has not been deleted
+	Then it's confirmed the workpoint has not been deleted

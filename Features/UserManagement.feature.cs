@@ -85,17 +85,17 @@ namespace LicUiTests.Features
 #line 9
  testRunner.And("I navigate to Login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table47 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table52 = new TechTalk.SpecFlow.Table(new string[] {
                         "key",
                         "value"});
-            table47.AddRow(new string[] {
+            table52.AddRow(new string[] {
                         "username",
                         "admin"});
-            table47.AddRow(new string[] {
+            table52.AddRow(new string[] {
                         "password",
                         "Admin@123"});
 #line 10
- testRunner.When("I log in with the following credentials", ((string)(null)), table47, "When ");
+ testRunner.When("I log in with the following credentials", ((string)(null)), table52, "When ");
 #line hidden
 #line 14
  testRunner.Then("I\'m successfully logged into Licenta app with user A", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -132,29 +132,29 @@ this.FeatureBackground();
 #line 19
  testRunner.When("I select \'Adauga client nou\' button from Clienti tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table48 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table53 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table48.AddRow(new string[] {
+                table53.AddRow(new string[] {
                             "Prenume",
                             "Customer"});
-                table48.AddRow(new string[] {
+                table53.AddRow(new string[] {
                             "Nume",
                             "UI Test"});
-                table48.AddRow(new string[] {
+                table53.AddRow(new string[] {
                             "Companie",
-                            "Demo Company"});
-                table48.AddRow(new string[] {
+                            "Company Demo"});
+                table53.AddRow(new string[] {
                             "Username",
                             "customerUItest"});
-                table48.AddRow(new string[] {
+                table53.AddRow(new string[] {
                             "Parola",
                             "Admin@123"});
-                table48.AddRow(new string[] {
+                table53.AddRow(new string[] {
                             "Email",
                             "customerui@test"});
 #line 20
- testRunner.And("I register the customer with the following details", ((string)(null)), table48, "And ");
+ testRunner.And("I register the customer with the following details", ((string)(null)), table53, "And ");
 #line hidden
 #line 28
  testRunner.And("I select \'Adauga client nou\' button from Register modal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -194,29 +194,29 @@ this.FeatureBackground();
 #line 34
  testRunner.When("I select \'Adauga client nou\' button from Clienti tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table49 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table54 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table49.AddRow(new string[] {
+                table54.AddRow(new string[] {
                             "Prenume",
                             "Customer"});
-                table49.AddRow(new string[] {
+                table54.AddRow(new string[] {
                             "Nume",
                             "UI Test"});
-                table49.AddRow(new string[] {
+                table54.AddRow(new string[] {
                             "Companie",
-                            "Demo Company"});
-                table49.AddRow(new string[] {
+                            "Company Demo"});
+                table54.AddRow(new string[] {
                             "Username",
                             "custone"});
-                table49.AddRow(new string[] {
+                table54.AddRow(new string[] {
                             "Parola",
                             "Admin@123"});
-                table49.AddRow(new string[] {
+                table54.AddRow(new string[] {
                             "Email",
                             "customerui@test"});
 #line 35
- testRunner.And("I register the customer with the following details", ((string)(null)), table49, "And ");
+ testRunner.And("I register the customer with the following details", ((string)(null)), table54, "And ");
 #line hidden
 #line 43
  testRunner.And("I select \'Adauga client nou\' button from Register modal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -254,29 +254,29 @@ this.FeatureBackground();
 #line 48
  testRunner.When("I select \'Adauga client nou\' button from Clienti tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table50 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table55 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table50.AddRow(new string[] {
+                table55.AddRow(new string[] {
                             "Prenume",
                             "Customer"});
-                table50.AddRow(new string[] {
+                table55.AddRow(new string[] {
                             "Nume",
                             "UI Test"});
-                table50.AddRow(new string[] {
+                table55.AddRow(new string[] {
                             "Companie",
-                            "Demo Company"});
-                table50.AddRow(new string[] {
+                            "Company Demo"});
+                table55.AddRow(new string[] {
                             "Username",
                             ""});
-                table50.AddRow(new string[] {
+                table55.AddRow(new string[] {
                             "Parola",
                             "Admin@123"});
-                table50.AddRow(new string[] {
+                table55.AddRow(new string[] {
                             "Email",
                             ""});
 #line 49
- testRunner.And("I register the customer with the following details", ((string)(null)), table50, "And ");
+ testRunner.And("I register the customer with the following details", ((string)(null)), table55, "And ");
 #line hidden
 #line 57
  testRunner.And("I select \'Adauga client nou\' button from Register modal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -315,29 +315,29 @@ this.FeatureBackground();
 #line 62
  testRunner.When("I select \'Adauga client nou\' button from Clienti tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table51 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table56 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table51.AddRow(new string[] {
+                table56.AddRow(new string[] {
                             "Prenume",
                             "Customer"});
-                table51.AddRow(new string[] {
+                table56.AddRow(new string[] {
                             "Nume",
                             "UI Test"});
-                table51.AddRow(new string[] {
+                table56.AddRow(new string[] {
                             "Companie",
-                            "Demo Company"});
-                table51.AddRow(new string[] {
+                            "Company Demo"});
+                table56.AddRow(new string[] {
                             "Username",
                             "customerUItest"});
-                table51.AddRow(new string[] {
+                table56.AddRow(new string[] {
                             "Parola",
                             "Admin@123"});
-                table51.AddRow(new string[] {
+                table56.AddRow(new string[] {
                             "Email",
                             "customerui@test"});
 #line 63
- testRunner.And("I register the customer with the following details", ((string)(null)), table51, "And ");
+ testRunner.And("I register the customer with the following details", ((string)(null)), table56, "And ");
 #line hidden
 #line 71
  testRunner.And("I select \'Adauga client nou\' button from Register modal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -348,14 +348,14 @@ this.FeatureBackground();
 #line 73
  testRunner.When("I select \'Modifica\' button from Clienti tab for the customerUItest username", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table52 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table57 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table52.AddRow(new string[] {
+                table57.AddRow(new string[] {
                             "Prenume",
                             "Customer Updated"});
 #line 74
- testRunner.And("I update the following data for the customer selected", ((string)(null)), table52, "And ");
+ testRunner.And("I update the following data for the customer selected", ((string)(null)), table57, "And ");
 #line hidden
 #line 77
  testRunner.Then("I select Actualizeaza button on customer update modal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -397,29 +397,29 @@ this.FeatureBackground();
 #line 84
  testRunner.When("I select \'Adauga client nou\' button from Clienti tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table53 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table58 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table53.AddRow(new string[] {
+                table58.AddRow(new string[] {
                             "Prenume",
                             "Customer"});
-                table53.AddRow(new string[] {
+                table58.AddRow(new string[] {
                             "Nume",
                             "UI Test"});
-                table53.AddRow(new string[] {
+                table58.AddRow(new string[] {
                             "Companie",
-                            "Demo Company"});
-                table53.AddRow(new string[] {
+                            "Company Demo"});
+                table58.AddRow(new string[] {
                             "Username",
                             "customerUItest"});
-                table53.AddRow(new string[] {
+                table58.AddRow(new string[] {
                             "Parola",
                             "Admin@123"});
-                table53.AddRow(new string[] {
+                table58.AddRow(new string[] {
                             "Email",
                             "customerui@test"});
 #line 85
- testRunner.And("I register the customer with the following details", ((string)(null)), table53, "And ");
+ testRunner.And("I register the customer with the following details", ((string)(null)), table58, "And ");
 #line hidden
 #line 93
  testRunner.And("I select \'Adauga client nou\' button from Register modal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -437,32 +437,32 @@ this.FeatureBackground();
 #line 97
  testRunner.When("I navigate to Login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table54 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table59 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table54.AddRow(new string[] {
+                table59.AddRow(new string[] {
                             "username",
                             "customerUItest"});
-                table54.AddRow(new string[] {
+                table59.AddRow(new string[] {
                             "password",
                             "Admin@123"});
 #line 98
- testRunner.And("I log in with the following credentials", ((string)(null)), table54, "And ");
+ testRunner.And("I log in with the following credentials", ((string)(null)), table59, "And ");
 #line hidden
 #line 102
  testRunner.And("I navigate to user\'s profile", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table55 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table60 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table55.AddRow(new string[] {
+                table60.AddRow(new string[] {
                             "Old password",
                             "Admin@123"});
-                table55.AddRow(new string[] {
+                table60.AddRow(new string[] {
                             "New password",
                             "Admin@12345"});
 #line 103
- testRunner.And("I update user\'s password", ((string)(null)), table55, "And ");
+ testRunner.And("I update user\'s password", ((string)(null)), table60, "And ");
 #line hidden
 #line 107
  testRunner.Then("the following toast message is displayed: Parola a fost schimbata. Te rugam sa te" +
@@ -475,17 +475,17 @@ this.FeatureBackground();
 #line 109
  testRunner.When("I navigate to Login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-                TechTalk.SpecFlow.Table table56 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table61 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table56.AddRow(new string[] {
+                table61.AddRow(new string[] {
                             "username",
                             "customerUItest"});
-                table56.AddRow(new string[] {
+                table61.AddRow(new string[] {
                             "password",
                             "Admin@12345"});
 #line 110
- testRunner.And("I log in with the following credentials", ((string)(null)), table56, "And ");
+ testRunner.And("I log in with the following credentials", ((string)(null)), table61, "And ");
 #line hidden
 #line 114
  testRunner.Then("I\'m successfully logged into Licenta app with user C", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");

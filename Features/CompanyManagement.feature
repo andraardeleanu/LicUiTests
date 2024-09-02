@@ -18,7 +18,7 @@ Scenario: Successfully create a new company
 	When I select 'Adauga companie' button from Companii tab
 	And I fill in company's new details with a new CUI
 		| key  | value        |
-		| Name | Company Demo |
+		| Name | Company Test |
 	When I select Adauga button from 'Creaza companie' page
 	Then the following toast message is displayed: Compania a fost creata cu succes!
 	And the new company is displayed through Companies page
@@ -61,8 +61,8 @@ Scenario: Successfully update the name of an existing company
 
 @SmokeTests
 Scenario: Successfully display company's workpoints
-	When I select the workpoint option button from the Demo Company
-	Then the company's workpoint Demo Workpoint is displayed through table: Demo Company
+	When I select the workpoint option button from the Company Demo
+	Then the company's workpoint Workpoint Demo is displayed through table: Company Demo
 
 @RegressionTests
 Scenario: Info message is displayed if there are no workpoints assigned to the company
@@ -71,8 +71,8 @@ Scenario: Info message is displayed if there are no workpoints assigned to the c
 
 @SmokeTests
 Scenario: Successfully filter companies by name
-	When I search for Demo Company on Companies tab content
-	Then the searched company Demo Company is the only one displayed
+	When I search for Company Demo on Companies tab content
+	Then the searched company Company Demo is the only one displayed
 
 @RegressionTests
 Scenario: Info message is displayed if the searched company does not exist

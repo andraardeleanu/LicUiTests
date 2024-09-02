@@ -62,18 +62,12 @@ namespace LicUiTests.Steps
             Sync.ExplicitWait(1);
 
             int q1 = int.Parse(dictionary["Product Demo 1"]);
-            int q2 = int.Parse(dictionary["Product Demo 2"]);
-            int q3 = int.Parse(dictionary["Product Demo 3"]);
-
-            LicentaPages.OrdersPage.FirstProductManualOrderInput.SendKeys(q1.ToString());
-            LicentaPages.OrdersPage.SecondProductManualOrderInput.SendKeys(q2.ToString());
-            LicentaPages.OrdersPage.ThirdProductManualOrderInput.SendKeys(q3.ToString());
-
-            decimal firstProductPrice = decimal.Parse(LicentaPages.OrdersPage.FirstProductPrice.Text.ToString());
-            decimal secondProductPrice = decimal.Parse(LicentaPages.OrdersPage.SecondProductPrice.Text.ToString());
-            decimal thirdProductPrice = decimal.Parse(LicentaPages.OrdersPage.ThirdProductPrice.Text.ToString());
-            decimal totalPrice = firstProductPrice * q1 + secondProductPrice * q2 + thirdProductPrice * q3;
-
+            LicentaPages.OrdersPage.ProductQuantity("Product Demo 1").SendKeys(dictionary["Product Demo 1"]);
+            //LicentaPages.OrdersPage.FirstProductManualOrderInput.SendKeys(dictionary["Product Demo 4"]);
+            Sync.ExplicitWait(1);
+            decimal productPrice = decimal.Parse(LicentaPages.OrdersPage.GetProductPrice("Product Demo 1").Text.ToString());
+            decimal totalPrice = productPrice * q1;
+  
             scenarioContext.Add(totalPriceKey, totalPrice);
         }
 
@@ -84,11 +78,14 @@ namespace LicUiTests.Steps
             LicentaPages.OrdersPage.CreateOrderButton.Click();
         }
 
-        [Then(@"the new order is displayed through orders table")]
-        public void ThenTheNewOrderIsDisplayedThroughOrdersTable()
+        [Then(@"the new (.*) is displayed through orders table")]
+        public void ThenTheNewOrderIsDisplayedThroughOrdersTable(string orderNoKey)
         {
-            Sync.ExplicitWait(1);
+            Sync.ExplicitWait(2);
             LicentaPages.OrdersPage.FirstOrderDateFromTable.Text.Should().Be(DateTime.Now.ToString("dd.MM.yyyy"));
+            var orderNo = LicentaPages.OrdersPage.GetFirstOrderNo().Text;
+
+            scenarioContext.Add(orderNoKey, orderNo.ToString());
         }
 
         [When(@"I filter the list of orders by order number: (.*)")]

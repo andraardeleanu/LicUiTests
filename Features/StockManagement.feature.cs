@@ -85,17 +85,17 @@ namespace LicUiTests.Features
 #line 6
  testRunner.And("I navigate to Login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table46 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table51 = new TechTalk.SpecFlow.Table(new string[] {
                         "key",
                         "value"});
-            table46.AddRow(new string[] {
+            table51.AddRow(new string[] {
                         "username",
                         "admin"});
-            table46.AddRow(new string[] {
+            table51.AddRow(new string[] {
                         "password",
                         "Admin@123"});
 #line 7
- testRunner.When("I log in with the following credentials", ((string)(null)), table46, "When ");
+ testRunner.When("I log in with the following credentials", ((string)(null)), table51, "When ");
 #line hidden
 #line 11
  testRunner.Then("I\'m successfully logged into Licenta app with user A", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");

@@ -46,6 +46,12 @@ namespace LicUiTests.Steps
                 case "Actualizeaza stoc":
                     LicentaPages.StockPage.UpdateStockButton.Click();
                     break;
+                case "Modifica status":
+                    LicentaPages.OrdersPage.UpdateFirstOrderStatus.Click();
+                    break;
+                case "Genereaza si descarca factura":
+                    LicentaPages.OrdersPage.GenerateOrderBillButton.Click();
+                    break;
             }
         }
 

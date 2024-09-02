@@ -109,17 +109,17 @@ this.ScenarioInitialize(scenarioInfo);
 #line 5
 this.FeatureBackground();
 #line hidden
-                TechTalk.SpecFlow.Table table8 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table13 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table8.AddRow(new string[] {
+                table13.AddRow(new string[] {
                             "username",
                             "admin"});
-                table8.AddRow(new string[] {
+                table13.AddRow(new string[] {
                             "password",
                             "Admin@123"});
 #line 11
- testRunner.When("I log in with the following credentials", ((string)(null)), table8, "When ");
+ testRunner.When("I log in with the following credentials", ((string)(null)), table13, "When ");
 #line hidden
 #line 15
  testRunner.Then("I\'m successfully logged into Licenta app with user A", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -159,17 +159,17 @@ this.ScenarioInitialize(scenarioInfo);
 #line 5
 this.FeatureBackground();
 #line hidden
-                TechTalk.SpecFlow.Table table9 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table14 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table9.AddRow(new string[] {
+                table14.AddRow(new string[] {
                             "username",
                             "admin"});
-                table9.AddRow(new string[] {
+                table14.AddRow(new string[] {
                             "password",
                             "Admin@123"});
 #line 22
- testRunner.When("I log in with the following credentials", ((string)(null)), table9, "When ");
+ testRunner.When("I log in with the following credentials", ((string)(null)), table14, "When ");
 #line hidden
 #line 26
  testRunner.Then("I\'m successfully logged into Licenta app with user A", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -181,11 +181,11 @@ this.FeatureBackground();
  testRunner.Then("all the orders are displayed through the table", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 29
- testRunner.When("I filter the list of orders by order number: 8b313e8e-7b8f-42e1-b992-540920dd373b" +
+ testRunner.When("I filter the list of orders by order number: 2bf92285-b09b-4e04-a5b3-3dc5c27baadb" +
                         "", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 30
- testRunner.Then("the order 8b313e8e-7b8f-42e1-b992-540920dd373b is displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("the order 2bf92285-b09b-4e04-a5b3-3dc5c27baadb is displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -213,17 +213,17 @@ this.ScenarioInitialize(scenarioInfo);
 #line 5
 this.FeatureBackground();
 #line hidden
-                TechTalk.SpecFlow.Table table10 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table15 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table10.AddRow(new string[] {
+                table15.AddRow(new string[] {
                             "username",
                             "admin"});
-                table10.AddRow(new string[] {
+                table15.AddRow(new string[] {
                             "password",
                             "Admin@123"});
 #line 34
- testRunner.When("I log in with the following credentials", ((string)(null)), table10, "When ");
+ testRunner.When("I log in with the following credentials", ((string)(null)), table15, "When ");
 #line hidden
 #line 38
  testRunner.Then("I\'m successfully logged into Licenta app with user A", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -266,17 +266,17 @@ this.ScenarioInitialize(scenarioInfo);
 #line 5
 this.FeatureBackground();
 #line hidden
-                TechTalk.SpecFlow.Table table11 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table16 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table11.AddRow(new string[] {
+                table16.AddRow(new string[] {
                             "username",
                             "custone"});
-                table11.AddRow(new string[] {
+                table16.AddRow(new string[] {
                             "password",
                             "Admin@123"});
 #line 46
- testRunner.When("I log in with the following credentials", ((string)(null)), table11, "When ");
+ testRunner.When("I log in with the following credentials", ((string)(null)), table16, "When ");
 #line hidden
 #line 50
  testRunner.Then("I\'m successfully logged into Licenta app with user C", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -319,17 +319,17 @@ this.ScenarioInitialize(scenarioInfo);
 #line 5
 this.FeatureBackground();
 #line hidden
-                TechTalk.SpecFlow.Table table12 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table17 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table12.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "username",
                             "custone"});
-                table12.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "password",
                             "Admin@123"});
 #line 58
- testRunner.When("I log in with the following credentials", ((string)(null)), table12, "When ");
+ testRunner.When("I log in with the following credentials", ((string)(null)), table17, "When ");
 #line hidden
 #line 62
  testRunner.Then("I\'m successfully logged into Licenta app with user C", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -348,57 +348,6 @@ this.FeatureBackground();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Info message is displayed if there are no order details")]
-        [NUnit.Framework.CategoryAttribute("SmokeTests")]
-        public void InfoMessageIsDisplayedIfThereAreNoOrderDetails()
-        {
-            string[] tagsOfScenario = new string[] {
-                    "SmokeTests"};
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Info message is displayed if there are no order details", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 68
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 5
-this.FeatureBackground();
-#line hidden
-                TechTalk.SpecFlow.Table table13 = new TechTalk.SpecFlow.Table(new string[] {
-                            "key",
-                            "value"});
-                table13.AddRow(new string[] {
-                            "username",
-                            "custone"});
-                table13.AddRow(new string[] {
-                            "password",
-                            "Admin@123"});
-#line 69
- testRunner.When("I log in with the following credentials", ((string)(null)), table13, "When ");
-#line hidden
-#line 73
- testRunner.Then("I\'m successfully logged into Licenta app with user C", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 74
- testRunner.When("I navigate to \'Comenzile mele\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 75
- testRunner.And("I select Detalii button for the order c87f8659-c7f0-4ac5-a00c-6091a419d6a1 from t" +
-                        "he table", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 76
- testRunner.Then("the following info message is displayed: Nu exista produse in comanda.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Order\'s details are available for the admin")]
         [NUnit.Framework.CategoryAttribute("SmokeTests")]
         public void OrdersDetailsAreAvailableForTheAdmin()
@@ -407,184 +356,7 @@ this.FeatureBackground();
                     "SmokeTests"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Order\'s details are available for the admin", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 79
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 5
-this.FeatureBackground();
-#line hidden
-                TechTalk.SpecFlow.Table table14 = new TechTalk.SpecFlow.Table(new string[] {
-                            "key",
-                            "value"});
-                table14.AddRow(new string[] {
-                            "username",
-                            "admin"});
-                table14.AddRow(new string[] {
-                            "password",
-                            "Admin@123"});
-#line 80
- testRunner.When("I log in with the following credentials", ((string)(null)), table14, "When ");
-#line hidden
-#line 84
- testRunner.Then("I\'m successfully logged into Licenta app with user A", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 85
- testRunner.When("I navigate to \'Comenzi\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 86
- testRunner.And("I select Detalii button for the order 8b313e8e-7b8f-42e1-b992-540920dd373b from t" +
-                        "he table", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 87
- testRunner.Then("every product from the order is displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Order\'s details are available for the customer")]
-        [NUnit.Framework.CategoryAttribute("SmokeTests")]
-        public void OrdersDetailsAreAvailableForTheCustomer()
-        {
-            string[] tagsOfScenario = new string[] {
-                    "SmokeTests"};
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Order\'s details are available for the customer", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 90
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 5
-this.FeatureBackground();
-#line hidden
-                TechTalk.SpecFlow.Table table15 = new TechTalk.SpecFlow.Table(new string[] {
-                            "key",
-                            "value"});
-                table15.AddRow(new string[] {
-                            "username",
-                            "custone"});
-                table15.AddRow(new string[] {
-                            "password",
-                            "Admin@123"});
-#line 91
- testRunner.When("I log in with the following credentials", ((string)(null)), table15, "When ");
-#line hidden
-#line 95
- testRunner.Then("I\'m successfully logged into Licenta app with user C", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 96
- testRunner.When("I navigate to \'Comenzile mele\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 97
- testRunner.And("I select Detalii button for the order 8b313e8e-7b8f-42e1-b992-540920dd373b from t" +
-                        "he table", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 98
- testRunner.Then("every product from the order is displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Successfully create new manual order")]
-        [NUnit.Framework.CategoryAttribute("SmokeTests")]
-        public void SuccessfullyCreateNewManualOrder()
-        {
-            string[] tagsOfScenario = new string[] {
-                    "SmokeTests"};
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Successfully create new manual order", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 101
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 5
-this.FeatureBackground();
-#line hidden
-                TechTalk.SpecFlow.Table table16 = new TechTalk.SpecFlow.Table(new string[] {
-                            "key",
-                            "value"});
-                table16.AddRow(new string[] {
-                            "username",
-                            "custone"});
-                table16.AddRow(new string[] {
-                            "password",
-                            "Admin@123"});
-#line 102
- testRunner.When("I log in with the following credentials", ((string)(null)), table16, "When ");
-#line hidden
-#line 106
- testRunner.Then("I\'m successfully logged into Licenta app with user C", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 107
- testRunner.When("I navigate to \'Comenzile mele\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 108
- testRunner.And("I select Creeaza comanda manual button from \'Comenzi\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 109
- testRunner.And("I select Demo Workpoint from workpoints dropdown on Create manual order modal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-                TechTalk.SpecFlow.Table table17 = new TechTalk.SpecFlow.Table(new string[] {
-                            "key",
-                            "value"});
-                table17.AddRow(new string[] {
-                            "Product Demo 1",
-                            "3"});
-                table17.AddRow(new string[] {
-                            "Product Demo 2",
-                            "2"});
-                table17.AddRow(new string[] {
-                            "Product Demo 3",
-                            "10"});
-#line 110
- testRunner.And("I select the following list of products for the new order with a total price of 1" +
-                        "401.95 RON", ((string)(null)), table17, "And ");
-#line hidden
-#line 115
- testRunner.And("I select Creeaza comanda button on Create manual order modal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 116
- testRunner.Then("the following toast message is displayed: Comanda a fost creata cu succes!", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 117
- testRunner.And("the new order is displayed through orders table", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Manual order cannot be created without selecting the workpoint")]
-        [NUnit.Framework.CategoryAttribute("SmokeTests")]
-        public void ManualOrderCannotBeCreatedWithoutSelectingTheWorkpoint()
-        {
-            string[] tagsOfScenario = new string[] {
-                    "SmokeTests"};
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Manual order cannot be created without selecting the workpoint", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 120
+#line 68
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -602,60 +374,95 @@ this.FeatureBackground();
                             "value"});
                 table18.AddRow(new string[] {
                             "username",
-                            "custone"});
+                            "admin"});
                 table18.AddRow(new string[] {
                             "password",
                             "Admin@123"});
-#line 121
+#line 69
  testRunner.When("I log in with the following credentials", ((string)(null)), table18, "When ");
 #line hidden
-#line 125
- testRunner.Then("I\'m successfully logged into Licenta app with user C", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 73
+ testRunner.Then("I\'m successfully logged into Licenta app with user A", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 126
- testRunner.When("I navigate to \'Comenzile mele\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 74
+ testRunner.When("I navigate to \'Comenzi\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 127
- testRunner.And("I select Creeaza comanda manual button from \'Comenzi\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 75
+ testRunner.And("I select Detalii button for the order 2bf92285-b09b-4e04-a5b3-3dc5c27baadb from t" +
+                        "he table", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table19 = new TechTalk.SpecFlow.Table(new string[] {
-                            "key",
-                            "value"});
-                table19.AddRow(new string[] {
-                            "Product Demo 1",
-                            "3"});
-                table19.AddRow(new string[] {
-                            "Product Demo 2",
-                            "2"});
-                table19.AddRow(new string[] {
-                            "Product Demo 3",
-                            "10"});
-#line 128
- testRunner.And("I select the following list of products for the new order with a total price of 1" +
-                        "401.95 RON", ((string)(null)), table19, "And ");
-#line hidden
-#line 133
- testRunner.And("I select Creeaza comanda button on Create manual order modal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 134
- testRunner.Then("the following error message is displayed: Nu ai selectat punctul de lucru pentru " +
-                        "noua comanda. Daca este un punct de lucru nou, il poti crea din tab-ul Puncte de" +
-                        " lucru.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 76
+ testRunner.Then("every product from the order is displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Manual order cannot be created without selecting the products")]
+        [NUnit.Framework.DescriptionAttribute("Order\'s details are available for the customer")]
         [NUnit.Framework.CategoryAttribute("SmokeTests")]
-        public void ManualOrderCannotBeCreatedWithoutSelectingTheProducts()
+        public void OrdersDetailsAreAvailableForTheCustomer()
         {
             string[] tagsOfScenario = new string[] {
                     "SmokeTests"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Manual order cannot be created without selecting the products", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 137
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Order\'s details are available for the customer", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 79
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 5
+this.FeatureBackground();
+#line hidden
+                TechTalk.SpecFlow.Table table19 = new TechTalk.SpecFlow.Table(new string[] {
+                            "key",
+                            "value"});
+                table19.AddRow(new string[] {
+                            "username",
+                            "custone"});
+                table19.AddRow(new string[] {
+                            "password",
+                            "Admin@123"});
+#line 80
+ testRunner.When("I log in with the following credentials", ((string)(null)), table19, "When ");
+#line hidden
+#line 84
+ testRunner.Then("I\'m successfully logged into Licenta app with user C", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 85
+ testRunner.When("I navigate to \'Comenzile mele\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 86
+ testRunner.And("I select Detalii button for the order 2bf92285-b09b-4e04-a5b3-3dc5c27baadb from t" +
+                        "he table", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 87
+ testRunner.Then("every product from the order is displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Successfully create new manual order")]
+        [NUnit.Framework.CategoryAttribute("SmokeTests")]
+        [NUnit.Framework.CategoryAttribute("OrderCleanUp")]
+        [NUnit.Framework.CategoryAttribute("OrderProductsReset")]
+        public void SuccessfullyCreateNewManualOrder()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "SmokeTests",
+                    "OrderCleanUp",
+                    "OrderProductsReset"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Successfully create new manual order", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 90
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -677,25 +484,159 @@ this.FeatureBackground();
                 table20.AddRow(new string[] {
                             "password",
                             "Admin@123"});
-#line 138
+#line 91
  testRunner.When("I log in with the following credentials", ((string)(null)), table20, "When ");
 #line hidden
-#line 142
+#line 95
  testRunner.Then("I\'m successfully logged into Licenta app with user C", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 143
+#line 96
  testRunner.When("I navigate to \'Comenzile mele\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 144
+#line 97
  testRunner.And("I select Creeaza comanda manual button from \'Comenzi\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 145
- testRunner.And("I select Demo Workpoint from workpoints dropdown on Create manual order modal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 98
+ testRunner.And("I select Workpoint Demo from workpoints dropdown on Create manual order modal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 146
+                TechTalk.SpecFlow.Table table21 = new TechTalk.SpecFlow.Table(new string[] {
+                            "key",
+                            "value"});
+                table21.AddRow(new string[] {
+                            "Product Demo 1",
+                            "1"});
+#line 99
+ testRunner.And("I select the following list of products for the new order with a total price of 1" +
+                        "00.00 RON", ((string)(null)), table21, "And ");
+#line hidden
+#line 102
  testRunner.And("I select Creeaza comanda button on Create manual order modal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 147
+#line 103
+ testRunner.Then("the following toast message is displayed: Comanda a fost creata cu succes!", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 104
+ testRunner.And("the new OrderNo is displayed through orders table", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Manual order cannot be created without selecting the workpoint")]
+        [NUnit.Framework.CategoryAttribute("SmokeTests")]
+        public void ManualOrderCannotBeCreatedWithoutSelectingTheWorkpoint()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "SmokeTests"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Manual order cannot be created without selecting the workpoint", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 107
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 5
+this.FeatureBackground();
+#line hidden
+                TechTalk.SpecFlow.Table table22 = new TechTalk.SpecFlow.Table(new string[] {
+                            "key",
+                            "value"});
+                table22.AddRow(new string[] {
+                            "username",
+                            "custone"});
+                table22.AddRow(new string[] {
+                            "password",
+                            "Admin@123"});
+#line 108
+ testRunner.When("I log in with the following credentials", ((string)(null)), table22, "When ");
+#line hidden
+#line 112
+ testRunner.Then("I\'m successfully logged into Licenta app with user C", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 113
+ testRunner.When("I navigate to \'Comenzile mele\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 114
+ testRunner.And("I select Creeaza comanda manual button from \'Comenzi\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table23 = new TechTalk.SpecFlow.Table(new string[] {
+                            "key",
+                            "value"});
+                table23.AddRow(new string[] {
+                            "Product Demo 1",
+                            "2"});
+#line 115
+ testRunner.And("I select the following list of products for the new order with a total price of 2" +
+                        "00.00 RON", ((string)(null)), table23, "And ");
+#line hidden
+#line 118
+ testRunner.And("I select Creeaza comanda button on Create manual order modal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 119
+ testRunner.Then("the following error message is displayed: Nu ai selectat punctul de lucru pentru " +
+                        "noua comanda. Daca este un punct de lucru nou, il poti crea din tab-ul Puncte de" +
+                        " lucru.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Manual order cannot be created without selecting the products")]
+        [NUnit.Framework.CategoryAttribute("SmokeTests")]
+        public void ManualOrderCannotBeCreatedWithoutSelectingTheProducts()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "SmokeTests"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Manual order cannot be created without selecting the products", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 122
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 5
+this.FeatureBackground();
+#line hidden
+                TechTalk.SpecFlow.Table table24 = new TechTalk.SpecFlow.Table(new string[] {
+                            "key",
+                            "value"});
+                table24.AddRow(new string[] {
+                            "username",
+                            "custone"});
+                table24.AddRow(new string[] {
+                            "password",
+                            "Admin@123"});
+#line 123
+ testRunner.When("I log in with the following credentials", ((string)(null)), table24, "When ");
+#line hidden
+#line 127
+ testRunner.Then("I\'m successfully logged into Licenta app with user C", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 128
+ testRunner.When("I navigate to \'Comenzile mele\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 129
+ testRunner.And("I select Creeaza comanda manual button from \'Comenzi\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 130
+ testRunner.And("I select Workpoint Demo from workpoints dropdown on Create manual order modal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 131
+ testRunner.And("I select Creeaza comanda button on Create manual order modal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 132
  testRunner.Then("the following error message is displayed: Nu ai selectat niciun produs pentru com" +
                         "anda.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -712,153 +653,7 @@ this.FeatureBackground();
                     "SmokeTests"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Manual orders cannot be created if there is not enough stock", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 150
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 5
-this.FeatureBackground();
-#line hidden
-                TechTalk.SpecFlow.Table table21 = new TechTalk.SpecFlow.Table(new string[] {
-                            "key",
-                            "value"});
-                table21.AddRow(new string[] {
-                            "username",
-                            "custone"});
-                table21.AddRow(new string[] {
-                            "password",
-                            "Admin@123"});
-#line 151
- testRunner.When("I log in with the following credentials", ((string)(null)), table21, "When ");
-#line hidden
-#line 155
- testRunner.Then("I\'m successfully logged into Licenta app with user C", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 156
- testRunner.When("I navigate to \'Comenzile mele\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 157
- testRunner.And("I select Creeaza comanda manual button from \'Comenzi\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 158
- testRunner.And("I select Demo Workpoint from workpoints dropdown on Create manual order modal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-                TechTalk.SpecFlow.Table table22 = new TechTalk.SpecFlow.Table(new string[] {
-                            "key",
-                            "value"});
-                table22.AddRow(new string[] {
-                            "Product Demo 1",
-                            "30000"});
-                table22.AddRow(new string[] {
-                            "Product Demo 2",
-                            "2"});
-                table22.AddRow(new string[] {
-                            "Product Demo 3",
-                            "10"});
-#line 159
- testRunner.And("I select the following list of products for the new order with a total price of 3" +
-                        "000801.98 RON", ((string)(null)), table22, "And ");
-#line hidden
-#line 164
- testRunner.And("I select Creeaza comanda button on Create manual order modal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 165
- testRunner.Then("the following error message is displayed: Verifica stocul disponibil pentru produ" +
-                        "sele din comanda.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Product\'s quantity must be valid in order to place the order")]
-        [NUnit.Framework.CategoryAttribute("SmokeTests")]
-        public void ProductsQuantityMustBeValidInOrderToPlaceTheOrder()
-        {
-            string[] tagsOfScenario = new string[] {
-                    "SmokeTests"};
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Product\'s quantity must be valid in order to place the order", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 168
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 5
-this.FeatureBackground();
-#line hidden
-                TechTalk.SpecFlow.Table table23 = new TechTalk.SpecFlow.Table(new string[] {
-                            "key",
-                            "value"});
-                table23.AddRow(new string[] {
-                            "username",
-                            "custone"});
-                table23.AddRow(new string[] {
-                            "password",
-                            "Admin@123"});
-#line 169
- testRunner.When("I log in with the following credentials", ((string)(null)), table23, "When ");
-#line hidden
-#line 173
- testRunner.Then("I\'m successfully logged into Licenta app with user C", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 174
- testRunner.When("I navigate to \'Comenzile mele\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 175
- testRunner.And("I select Creeaza comanda manual button from \'Comenzi\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 176
- testRunner.And("I select Demo Workpoint from workpoints dropdown on Create manual order modal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-                TechTalk.SpecFlow.Table table24 = new TechTalk.SpecFlow.Table(new string[] {
-                            "key",
-                            "value"});
-                table24.AddRow(new string[] {
-                            "Product Demo 1",
-                            "-3"});
-                table24.AddRow(new string[] {
-                            "Product Demo 2",
-                            "2"});
-                table24.AddRow(new string[] {
-                            "Product Demo 3",
-                            "10"});
-#line 177
- testRunner.And("I select the following list of products for the new order with a total price of 8" +
-                        "02.01 RON", ((string)(null)), table24, "And ");
-#line hidden
-#line 182
- testRunner.And("I select Creeaza comanda button on Create manual order modal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 183
- testRunner.Then("the following error message is displayed: Cantitatea setata pentru unul sau mai m" +
-                        "ulte produse este invalida.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Total price is displayed correctly on create order modal")]
-        [NUnit.Framework.CategoryAttribute("SmokeTests")]
-        public void TotalPriceIsDisplayedCorrectlyOnCreateOrderModal()
-        {
-            string[] tagsOfScenario = new string[] {
-                    "SmokeTests"};
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Total price is displayed correctly on create order modal", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 186
+#line 135
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -880,40 +675,219 @@ this.FeatureBackground();
                 table25.AddRow(new string[] {
                             "password",
                             "Admin@123"});
-#line 187
+#line 136
  testRunner.When("I log in with the following credentials", ((string)(null)), table25, "When ");
 #line hidden
-#line 191
+#line 140
  testRunner.Then("I\'m successfully logged into Licenta app with user C", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 192
+#line 141
  testRunner.When("I navigate to \'Comenzile mele\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 193
+#line 142
  testRunner.And("I select Creeaza comanda manual button from \'Comenzi\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 194
- testRunner.And("I select Demo Workpoint from workpoints dropdown on Create manual order modal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 143
+ testRunner.And("I select Workpoint Demo from workpoints dropdown on Create manual order modal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
                 TechTalk.SpecFlow.Table table26 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
                 table26.AddRow(new string[] {
                             "Product Demo 1",
-                            "1"});
-                table26.AddRow(new string[] {
-                            "Product Demo 2",
-                            "1"});
-                table26.AddRow(new string[] {
-                            "Product Demo 3",
-                            "2"});
-#line 195
+                            "30000"});
+#line 144
  testRunner.And("I select the following list of products for the new order with a total price of 3" +
-                        "50.98 RON", ((string)(null)), table26, "And ");
+                        "000000.00 RON", ((string)(null)), table26, "And ");
 #line hidden
-#line 200
- testRunner.Then("I confirm total price is corecct for the selected products and quantities: 350.98" +
+#line 147
+ testRunner.And("I select Creeaza comanda button on Create manual order modal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 148
+ testRunner.Then("the following error message is displayed: Verifica stocul disponibil pentru produ" +
+                        "sele din comanda.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Product\'s quantity must be valid in order to place the order")]
+        [NUnit.Framework.CategoryAttribute("SmokeTests")]
+        public void ProductsQuantityMustBeValidInOrderToPlaceTheOrder()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "SmokeTests"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Product\'s quantity must be valid in order to place the order", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 151
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 5
+this.FeatureBackground();
+#line hidden
+                TechTalk.SpecFlow.Table table27 = new TechTalk.SpecFlow.Table(new string[] {
+                            "key",
+                            "value"});
+                table27.AddRow(new string[] {
+                            "username",
+                            "custone"});
+                table27.AddRow(new string[] {
+                            "password",
+                            "Admin@123"});
+#line 152
+ testRunner.When("I log in with the following credentials", ((string)(null)), table27, "When ");
+#line hidden
+#line 156
+ testRunner.Then("I\'m successfully logged into Licenta app with user C", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 157
+ testRunner.When("I navigate to \'Comenzile mele\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 158
+ testRunner.And("I select Creeaza comanda manual button from \'Comenzi\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 159
+ testRunner.And("I select Workpoint Demo from workpoints dropdown on Create manual order modal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table28 = new TechTalk.SpecFlow.Table(new string[] {
+                            "key",
+                            "value"});
+                table28.AddRow(new string[] {
+                            "Product Demo 1",
+                            "-2"});
+#line 160
+ testRunner.And("I select the following list of products for the new order with a total price of 8" +
+                        "02.01 RON", ((string)(null)), table28, "And ");
+#line hidden
+#line 163
+ testRunner.And("I select Creeaza comanda button on Create manual order modal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 164
+ testRunner.Then("the following error message is displayed: Cantitatea setata pentru unul sau mai m" +
+                        "ulte produse este invalida.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Total price is displayed correctly on create order modal")]
+        [NUnit.Framework.CategoryAttribute("SmokeTests")]
+        public void TotalPriceIsDisplayedCorrectlyOnCreateOrderModal()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "SmokeTests"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Total price is displayed correctly on create order modal", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 167
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 5
+this.FeatureBackground();
+#line hidden
+                TechTalk.SpecFlow.Table table29 = new TechTalk.SpecFlow.Table(new string[] {
+                            "key",
+                            "value"});
+                table29.AddRow(new string[] {
+                            "username",
+                            "custone"});
+                table29.AddRow(new string[] {
+                            "password",
+                            "Admin@123"});
+#line 168
+ testRunner.When("I log in with the following credentials", ((string)(null)), table29, "When ");
+#line hidden
+#line 172
+ testRunner.Then("I\'m successfully logged into Licenta app with user C", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 173
+ testRunner.When("I navigate to \'Comenzile mele\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 174
+ testRunner.And("I select Creeaza comanda manual button from \'Comenzi\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 175
+ testRunner.And("I select Workpoint Demo from workpoints dropdown on Create manual order modal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table30 = new TechTalk.SpecFlow.Table(new string[] {
+                            "key",
+                            "value"});
+                table30.AddRow(new string[] {
+                            "Product Demo 1",
+                            "3"});
+#line 176
+ testRunner.And("I select the following list of products for the new order with a total price of 3" +
+                        "00.00 RON", ((string)(null)), table30, "And ");
+#line hidden
+#line 179
+ testRunner.Then("I confirm total price is corecct for the selected products and quantities: 300.00" +
                         " RON", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Info message is displayed if there are no order details")]
+        [NUnit.Framework.IgnoreAttribute("Ignored scenario")]
+        public void InfoMessageIsDisplayedIfThereAreNoOrderDetails()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "Ignore"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Info message is displayed if there are no order details", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 182
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 5
+this.FeatureBackground();
+#line hidden
+                TechTalk.SpecFlow.Table table31 = new TechTalk.SpecFlow.Table(new string[] {
+                            "key",
+                            "value"});
+                table31.AddRow(new string[] {
+                            "username",
+                            "custone"});
+                table31.AddRow(new string[] {
+                            "password",
+                            "Admin@123"});
+#line 183
+ testRunner.When("I log in with the following credentials", ((string)(null)), table31, "When ");
+#line hidden
+#line 187
+ testRunner.Then("I\'m successfully logged into Licenta app with user C", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 188
+ testRunner.When("I navigate to \'Comenzile mele\' tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 189
+ testRunner.And("I select Detalii button for the order c87f8659-c7f0-4ac5-a00c-6091a419d6a1 from t" +
+                        "he table", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 190
+ testRunner.Then("the following info message is displayed: Nu exista produse in comanda.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
